@@ -7,6 +7,10 @@
 
 /* navbar */
 
+.active-menu {
+  color: #EC3E73;
+  border-bottom: 2px solid #EC3E73;
+}
 .navabr li::after
 {
   content: "";
