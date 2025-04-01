@@ -16,17 +16,19 @@ const ExpertiseSlider = ({ pageData }) => {
           autoplaySpeed: 2000,
           responsive: [
             { breakpoint: 1024, settings: { slidesToShow: 2 } },
-            { breakpoint: 768, settings: { slidesToShow: 1 } }
+            { breakpoint: 768, settings: { slidesToShow: 2 } },
+            { breakpoint: 400, settings: { slidesToShow: 1.5 } }
+
           ]
         };
   return (
     <div className="p-5">
       <Slider {...settings}>
         {pageData?.expertiseCards?.map((card, index) => (
-          <div key={index} className="p-3">
+          <div key={index} className="p-3 pe-0">
             {/* Nested div to apply background color properly */}
             <div 
-              className="flex flex-col items-center justify-end max-w-[205px] min-h-[262px] rounded text-white p-5 w-full" 
+              className="flex flex-col items-center justify-end max-w-[205px] min-h-[262px] rounded text-white p-5  w-full" 
               style={{ backgroundColor: card.bgColor }} // Remove !important
             >
               <div className="w-full">

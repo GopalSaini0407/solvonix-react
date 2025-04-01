@@ -48,7 +48,7 @@ export default function WhoWeAre() {
       <div className="about-work md:p-4 p-2 text-center text-base md:text-2xl lg:text-3xl">Efficiency</div>
       
       <div className="about-work hidden md:flex md:p-4 text-center text-base md:text-3xl lg:text-5xl font-bold 
-        bg-[url('/images/about_diamond.png')] bg-no-repeat bg-cover lg:w-[498px] max-w-[500px] lg:h-[500px] items-center justify-center">
+        bg-[url('/images/about_diamond.png')] bg-no-repeat bg-cover size-[200px] lg:w-[498px] max-w-[500px] lg:h-[500px] items-center justify-center">
         Solvonix
       </div>
 
@@ -70,7 +70,7 @@ export default function WhoWeAre() {
       <section className='about-bottom-box bg-[#EE3E77;] md:pb-30 relative z-10 md:z-0'>
       <Counter borderColor="white"/>
        </section>
-       <div className="footer relative top-[-285px] z-0 md:z-10 md:top-[-150px]">
+       <div className="footer relative  z-0 md:z-10 md:top-[-155px]">
        <Footer/>
 
        </div>

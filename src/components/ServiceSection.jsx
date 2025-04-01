@@ -2,10 +2,12 @@ import React from 'react'
 
 export function ServiceSection({pageData}) {
   return (
-    <div className="service-section">
+
+    <div>
+     <div className="service-section">
           {/* Services Section */}
           {
-          pageData.services &&   <section className="child-two p-8 border-2 border-gray-300 relative after:content-[''] after:absolute after:left-[10%] after:bottom-0 after:h-[3px] after:w-[80%] after:bg-[#EE3E77]">
+          pageData.services &&   <section className="child-two p-8 mb-10 border-2 border-gray-300 relative after:content-[''] after:absolute after:left-[10%] after:bottom-0 after:h-[3px] after:w-[80%] after:bg-[#EE3E77]">
           {/* <h3 className="sm:2xl md:text-3xl lg:text-4xl font-semibold pb-5 text-[#2d2d2d]">Our Search engine optimization methodology includes:</h3> */}
           {pageData.services && pageData.services.map((service, index) => (
             <div key={index}>
@@ -15,7 +17,7 @@ export function ServiceSection({pageData}) {
 
               }
               {
-                   service.title1 && <h1 className="text-4xl py-[30px] text-[#2d2d2d] font-medium">{service.title1}</h1>
+                   service.title1 && <h1 className="text-2xl md:text-4xl py-[30px] text-[#2d2d2d] font-medium">{service.title1}</h1>
 
               }
               {
@@ -35,7 +37,7 @@ export function ServiceSection({pageData}) {
 
           }
           {
-            service.title2 && <h1 className="text-4xl py-[30px] text-[#2d2d2d] font-medium">{service.title2}</h1>
+            service.title2 && <h1 className="text-[1.3rem] md:text-4xl py-[30px] text-[#2d2d2d] font-medium">{service.title2}</h1>
 
           }
           {
@@ -54,11 +56,11 @@ export function ServiceSection({pageData}) {
             ))
           }
           {
-            service.title3 && <h1 className="text-4xl py-[30px] text-[#2d2d2d] font-medium">{service.title3}</h1>
+            service.title3 && <h1 className="text-[1.3rem] md:text-4xl py-[30px] text-[#2d2d2d] font-medium">{service.title3}</h1>
 
           }
           {
-            service.subtitle1 && <strong>{service.subtitle1}</strong>
+            service.subtitle1 && <strong className='text-[#2d2d2d] text-[14px]'>{service.subtitle1}</strong>
           }
           {
             service.description5 && <p className="text-[#777] md:text-[18px] leading-7 font-[400] mb-3">{service.description5}</p>
@@ -72,20 +74,20 @@ export function ServiceSection({pageData}) {
             ))
           }
           {
-            service.subtitle2 && <strong>{service.subtitle2}</strong>
+            service.subtitle2 && <strong className='text-[#2d2d2d] text-[14px]'>{service.subtitle2}</strong>
           }
           {
             service.description6 &&  <p className="text-[#777] md:text-[18px] leading-7 font-[400] mb-3">{service.description6}</p>
 
           }
            {
-            service.subtitle3 && <strong>{service.subtitle3}</strong>
+            service.subtitle3 && <strong className='text-[#2d2d2d] text-[14px]'>{service.subtitle3}</strong>
           }
           {
               service.description7 && <p className="text-[#777] md:text-[18px] leading-7 font-[400] mb-3">{service.description7}</p>
           }
           {
-            service.subtitle4 && <strong>{service.subtitle4}</strong>
+            service.subtitle4 && <strong className='text-[#2d2d2d] text-[14px]'>{service.subtitle4}</strong>
           }
             {
               service.description8 && <p className="text-[#777] md:text-[18px] leading-7 font-[400] mb-3">{service.description8}</p>
@@ -109,19 +111,19 @@ export function ServiceSection({pageData}) {
               service.description11 && <p className="text-[#777] md:text-[18px] leading-7 font-[400] mb-3">{service.description11}</p>
           }
            {
-            service.subtitle5 && <strong>{service.subtitle5}</strong>
+            service.subtitle5 && <strong className='text-[#2d2d2d] text-[14px]'>{service.subtitle5}</strong>
           }
            {
               service.description12 && <p className="text-[#777] md:text-[18px] leading-7 font-[400] mb-3">{service.description12}</p>
           }
            {
-            service.subtitle6 && <strong>{service.subtitle6}</strong>
+            service.subtitle6 && <strong className='text-[#2d2d2d] text-[14px]' >{service.subtitle6}</strong>
           }
            {
               service.description13 && <p className="text-[#777] md:text-[18px] leading-7 font-[400] mb-3">{service.description13}</p>
           }
            {
-            service.subtitle7 && <strong>{service.subtitle7}</strong>
+            service.subtitle7 && <strong className='text-[#2d2d2d] text-[14px]'>{service.subtitle7}</strong>
           }
             {
               service.description14 && <p className="text-[#777] md:text-[18px] leading-7 font-[400] mb-3">{service.description14}</p>
@@ -138,13 +140,13 @@ export function ServiceSection({pageData}) {
 
        {/* Services 2 Section */}
        {
-        pageData.services2 &&  <section className="child-two p-8 border-2 border-gray-300 relative after:content-[''] after:absolute after:left-[10%] after:bottom-0 after:h-[3px] after:w-[80%] after:bg-[#EE3E77]">
+        pageData.services2 &&  <section className="child-two p-8 mb-10 border-2 border-gray-300 relative after:content-[''] after:absolute after:left-[10%] after:bottom-0 after:h-[3px] after:w-[80%] after:bg-[#EE3E77]">
         {/* <h3 className="sm:2xl md:text-3xl lg:text-4xl font-semibold pb-5 text-[#2d2d2d]">Our Search engine optimization methodology includes:</h3> */}
         {pageData.services2 && pageData.services2.map((service, index) => (
           <div key={index}>
         
             {
-                 service.title1 && <h1 className="text-4xl py-[30px] text-[#2d2d2d] font-medium">{service.title1}</h1>
+                 service.title1 && <h1 className="text-[1.3rem] md:text-4xl py-[30px] text-[#2d2d2d] font-medium">{service.title1}</h1>
 
             }
         
@@ -156,7 +158,7 @@ export function ServiceSection({pageData}) {
           ))
         }
         {
-          service.title2 && <h1 className="text-4xl py-[30px] text-[#2d2d2d] font-medium">{service.title2}</h1>
+          service.title2 && <h1 className="text-[1.3rem] md:text-4xl py-[30px] text-[#2d2d2d] font-medium">{service.title2}</h1>
 
         }
         {
@@ -183,13 +185,13 @@ export function ServiceSection({pageData}) {
 
         {/* Services 3 Section */}
         {
-        pageData.services3 &&  <section className="child-two p-8 border-2 border-gray-300 relative after:content-[''] after:absolute after:left-[10%] after:bottom-0 after:h-[3px] after:w-[80%] after:bg-[#EE3E77]">
+        pageData.services3 &&  <section className="child-two mb-10 p-8 border-2 border-gray-300 relative after:content-[''] after:absolute after:left-[10%] after:bottom-0 after:h-[3px] after:w-[80%] after:bg-[#EE3E77]">
         {/* <h3 className="sm:2xl md:text-3xl lg:text-4xl font-semibold pb-5 text-[#2d2d2d]">Our Search engine optimization methodology includes:</h3> */}
         {pageData.services3 && pageData.services3.map((service, index) => (
           <div key={index}>
         
             {
-                 service.title1 && <h1 className="text-4xl py-[30px] text-[#2d2d2d] font-medium">{service.title1}</h1>
+                 service.title1 && <h1 className="text-[1.3rem] md:text-4xl py-[30px] text-[#2d2d2d] font-medium">{service.title1}</h1>
 
             }
         
@@ -213,13 +215,13 @@ export function ServiceSection({pageData}) {
 
          {/* Services 4 Section */}
          {
-        pageData.services4 &&  <section className="child-two p-8 border-2 border-gray-300 relative after:content-[''] after:absolute after:left-[10%] after:bottom-0 after:h-[3px] after:w-[80%] after:bg-[#EE3E77]">
+        pageData.services4 &&  <section className="child-two mb-10 p-8 border-2 border-gray-300 relative after:content-[''] after:absolute after:left-[10%] after:bottom-0 after:h-[3px] after:w-[80%] after:bg-[#EE3E77]">
         {/* <h3 className="sm:2xl md:text-3xl lg:text-4xl font-semibold pb-5 text-[#2d2d2d]">Our Search engine optimization methodology includes:</h3> */}
         {pageData.services4 && pageData.services4.map((service, index) => (
           <div key={index}>
         
             {
-                 service.title1 && <h1 className="text-4xl py-[30px] text-[#2d2d2d] font-medium">{service.title1}</h1>
+                 service.title1 && <h1 className="text-[1.3rem] md:text-4xl py-[30px] text-[#2d2d2d] font-medium">{service.title1}</h1>
 
             }
         
@@ -233,15 +235,17 @@ export function ServiceSection({pageData}) {
           service.description2 && <p className="text-[#777] md:text-[18px] leading-7 font-[400] mb-3">{service.description2}</p>
 
         }
-            {/* <strong className="text-[#2d2d2d] text-[14px]">{service.title}</strong> */}
           </div>
         ))}
       </section>
        }
 
-       {/* bottom text */}
-       {
-        pageData.bottomText && <p className="my-7 text-[#2d2d2d] text-[14px]" dangerouslySetInnerHTML={{ __html:  pageData.bottomText }} />
+</div>
+
+
+        {/* bottom text */}
+        {
+        pageData.bottomText && <p className="my-7 text-[#2d2d2d] text-[14px] leading-6" dangerouslySetInnerHTML={{ __html:  pageData.bottomText }} />
        }
      
         {/* bottom list */}
@@ -253,9 +257,9 @@ export function ServiceSection({pageData}) {
           ))
         }
 
-        
 
-</div>
+    </div>
+
 
   )
 }

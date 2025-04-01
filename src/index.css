@@ -5,7 +5,39 @@
 @import "tailwindcss";
 
 
+/* .about-whychoose ul li::after {
+  background: url(../images/choose_listicon.jpg) left top no-repeat;
+  position: absolute;
+  left: 5px;
+  top: 14px;
+  content: "";
+  width: 9px;
+  height: 9px;
+} */
+
+
+
+
+
+
 /* navbar */
+
+.pink_txt::after {
+  background: url(../images/pink_dash.jpg) left top repeat-x;
+  position: absolute;
+  width: 86%;
+  height: 2px;
+  content: "";
+  left: 0;
+  top: -8px;
+  right: 0;
+  margin: 0 auto;
+}
+
+
+html, body {
+  height: 100%;
+}
 
 .active-menu {
   color: #EC3E73;
@@ -34,12 +66,21 @@
 
 }
 
+/* footer */
+
+.footer-main
+{
+  background-image: url('../public/images/footer_bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
 
 /* home css */
 .counter-section .counter-box
 {
-  width: 175px;
-  height: 175px;
+  /* width: 175px;
+  height: 175px; */
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -75,7 +116,6 @@
 
 .counter-section .counter-box h3
 {
-   font-size: 2.2rem;
    font-weight: 700;
    color: #000022;
    padding: 0px 50px;
@@ -139,6 +179,12 @@ display: block;
 color: #fff;
 }
 
+.home-services-content.grid.justify-center.md\:px-9.relative.group
+{
+  padding: 32px;
+}
+
+
 .home-portfolio .slick-next
 {
   position: absolute;
@@ -177,17 +223,36 @@ color: #fff;
   color: #fff !important;
 }
 
-/* .demo-div::before
+/* sub section */
+
+.sub-component .service-section
 {
-    content: "";
-    position: absolute;
-    left: 100px;
-    top: 0;
-    height: 2px;
-    width: 100%;
-    background-image: url('../public/images/pink_dash.jpg');
-    background-position:center;
-} */
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px
+}
+.sub-component .service-section .child-two:nth-child(3)
+{
+  grid-column: span 2;
+}
+
+.cms-development-box .service-section .child-two:nth-child(1)
+{
+  grid-column: span 2;
+}
+.cms-development-box .service-section .child-two:nth-child(3)
+{
+  grid-column: span 1;
+}
+.cms-development-box .service-section .child-two:nth-child(4)
+{
+  grid-column: span 2;
+}
+
+.content-creation-box .service-section .child-two:nth-child(1)
+{
+  grid-column: span 2;
+}
 
 @media (max-width: 640px) {
   .counter-section .counter-box:nth-child(2n) {
@@ -216,5 +281,49 @@ color: #fff;
       width: 50px;
       height: 50px;
   }
+}
+
+
+
+@media (max-width: 1023px) {
+
+  .sub-component .service-section
+  {
+    grid-template-columns: repeat(1,1fr);
+  }
+.sub-component .service-section .child-two:nth-child(3)
+{
+  grid-column: span 1;
+}
+.cms-development-box .service-section .child-two:nth-child(1)
+{
+  grid-column: span 1;
+}
+.cms-development-box .service-section .child-two:nth-child(3)
+{
+  grid-column: span 1;
+}
+.cms-development-box .service-section .child-two:nth-child(4)
+{
+  grid-column: span 1;
+}
+.content-creation-box .service-section .child-two:nth-child(1)
+{
+  grid-column: span 1;
+}
+
+.counter-section .counter-box:nth-child(even)::before
+{
+ 
+  top: 50px;
+  left: -90px;
+}
+.counter-section .counter-box:nth-child(even)::after
+{
+ 
+  top: -50px;
+  right: -85px;
+}
+
 }
 

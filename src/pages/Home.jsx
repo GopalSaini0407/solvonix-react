@@ -2,6 +2,9 @@ import React from 'react';
 import HomeSlider from '../components/HomeSlider';
 import Counter from '../components/Counter';
 import Footer from '../components/Footer';
+import {motion} from "framer-motion"
+
+
 export default function Home() {
 const ServiceData=[
 { img: 'images/offer_icon.png', title: 'Website Design and Development',para:"We develop web applications that appeal and reach to the end users delivering the desired result for our clients." },
@@ -51,9 +54,14 @@ return (
    <div className='home max-w-[1200px] mx-auto'>
       {/* Who We Are Section */}
       <div className='home-who-we-are flex p-4 flex-col-reverse md:flex-row md:py-20'>
-         <div className='flex-1'>
-            <h5 className='text-[#EA3E70] font-light text-base '>Who We Are</h5>
-            <h2 className='text-2xl md:text-6xl py-3 leading-none font-extralight'>
+         <motion.div className='flex-1'
+          initial={{ opacity:0, y:100}}
+          whileInView={{ opacity:1, y:0}}
+          transition={{ duration:0.5 }}
+          viewport={{ once:true }}
+         >
+            <h5 className='text-[#EA3E70] font-light text-base'>Who We Are</h5>
+            <h2 className='text-2xl sm:text-4xl lg:text-6xl py-3 leading-none font-extralight'>
                India's Leading Internet Marketing Service Provider
             </h2>
             <p className='font-extralight text-base text-[#A0A0A0] leading-[25px]'>
@@ -62,10 +70,14 @@ return (
                niche in the internet marketing industry for our skills and commitment to providing the
                best Search Engine Optimization services to our esteemed clients.
             </p>
-         </div>
-         <div className='flex-1 px-3'>
+         </motion.div>
+         <motion.div className='flex-1 px-3'
+           initial={{ opacity:0, x:-300}}
+           whileInView={{ opacity:1, x:0}}
+           transition={{ duration:0.5 }}
+           viewport={{ once:true }}>
             <img src='images/who_we.png' alt='Who We Are' className='w-full' />
-         </div>
+         </motion.div>
       </div>
       {/* Counter Section */}
          <Counter borderColor="#EA3E70"/>
@@ -75,11 +87,16 @@ return (
          <h4 className='text-[#000022] font-extralight text-3xl lg:text-[54px]'>What We Offer</h4>
          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-9 md:mt-[60px]'>
             {ServiceData.map((service, index) => (
-            <div key={index} className='home-services-content grid justify-center md:px-9'>
+            <div key={index} className='home-services-content grid justify-center md:px-9 relative group'>
+  <span className="absolute left-1/2 top-5 w-0 h-[2px] bg-white transform -translate-x-1/2 group-hover:w-[95%] transition-all duration-500 ease-in-out"></span>
+ <span className='absolute right-5 top-1/2 w-[2px] h-[0%] bg-white transform -translate-y-1/2 group-hover:h-[95%] transition-all duration-500 ease-in-out'></span>
+<span className='absolute left-1/2 bottom-5 w-[0%] h-[2px] bg-white transform -translate-x-1/2 group-hover:w-[95%] transition-all duration-500 ease-in-out'></span>
+ <span className='absolute left-5 top-1/2 w-[2px] h-[0%] bg-white transform -translate-y-1/2 group-hover:h-[95%] transition-all duration-500 ease-in-out'></span>
+
                <div className='service-img-box flex justify-center'>
                   <img src={service.img} alt={service.title} />
                </div>
-               <h3 className='text-[#323232] text-md lg:text-xl mt-[20px] font-semibold text-center'>
+               <h3 className='text-[#323232] text-md lg:text-xl mt-[20px] font-semibold text-center pb-7'>
                   {service.title}
                </h3>
                <p className='text-white'>{service.para}</p>
@@ -132,10 +149,10 @@ return (
    </div>
    {/* portfolio Section */}
    <section className='home-portfolio flex flex-col md:flex-row gap-5'>
-      <div className="portfolio-left-box w-100% md:w-[50%] lg:w-[30%] px-3 md:ps-[50px] my-auto">
+      <div className="portfolio-left-box w-100% md:w-[50%] lg:w-[30%] px-3 md:ps-[50px] my-auto items-center flex flex-col sm:items-start">
          <h4 className='text-[#EA3E70]'>Recent Work</h4>
          <h2 className='text-[#000022] font-extralight mt-1 mb-4 text-[3rem]'>Portfolio</h2>
-         <p className='text-[#777]  text-[17px] md:pe-[150px]'>If you have been looking to deploy quality, affordable web design company in India, Solvonix assures that we will live up to your expectation. !</p>
+         <p className='text-[#777] text-center sm:text-left text-[17px] md:pe-[150px]'>If you have been looking to deploy quality, affordable web design company in India, Solvonix assures that we will live up to your expectation. !</p>
          <button className='bg-[#EA3E70] text-white px-4 py-2 rounded mt-3'>Let's Get Started</button>
       </div>
       <div className='portfolio-right-box  w-100% md:w-[50%] lg:w-[65%]'>
@@ -144,7 +161,7 @@ return (
    </section>
    <div className='middle-container max-w-[1200px] mx-auto'>
       {/* why-choose Section */}
-      <section className='why-choose flex py-[5rem] px-5 flex-col md:flex-row'>
+      <section className='why-choose flex py-[5rem] px-5 flex-col-reverse items-center md:flex-row'>
          <div className='why-choose-left-box flex-1'>
             <h5 className='text-[#EA3E70]'>Why Choose</h5>
             <h2 className='text-[#000022]  text-4xl lg:text-[54px] font-extralight'>Solvonix</h2>
@@ -164,11 +181,11 @@ return (
       <section className='choose_plans grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-9 mx-5'>
          {
          choosePlanData.map((plan, index) => (
-         <div key={index} className="plans-box  border-t-3 border-t-[#EA3E70] md:p-5 p-0 relative font-bold hover:text-[white]
+         <div key={index} className="plans-box text-center sm:text-left border-t-3 border-t-[#EA3E70] md:p-5 p-0 relative font-bold hover:text-[white]
             before:absolute before:top-0 before:left-0 before:w-full before:h-0 
             before:bg-[#EA3E70] before:transition-all before:duration-700 hover:before:h-full 
             before:mix-blend-multiply">
-            <h3 className='relative z-10 text-[#EA3E70]'>{plan.title}</h3>
+            <h3 className='relative z-10 text-[#EA3E70] pt-5'>{plan.title}</h3>
             <small className='relative z-10 text-[#777]'>{plan.subTitle}</small>
             <p className='relative z-10 text-[#777] text-[14px] leading-[21px]'>{plan.para}</p>
          </div>
@@ -177,12 +194,12 @@ return (
       </section>
       {/* our-client Section */}
       <section className='our-client flex mt-9 relative flex-col lg:flex-row px-5 pb-[50px] bg-white z-10'>
-         <div className='client-left-box flex-1 bg-[#F7F7F7]'>
-            <h4 className='text-[#EA3E70]'>Happy Customers</h4>
-            <h2 className='text-[#000022] font-extralight mt-1 mb-4 text-4xl lg:text-[3rem]'>Our Clients</h2>
-            <p className='text-[#777] text-base lg:text-[20px] lg:pe-[200px] '>Solvonix is known as a quality and affordable logo designing company and has helped numerous big and small companies with their unique Business logo designing. </p>
+         <div className='client-left-box flex-1 bg-[#F7F7F7] text-center sm:text-left'>
+            <h4 className='text-[#EA3E70] text-2xl '>Happy Customers</h4>
+            <h2 className='text-[#000022] font-extralight mt-1 mb-4 text-2xl md:text-[3rem]'>Our Clients</h2>
+            <p className='text-[#777] text-[14px] md:text-[20px] lg:pe-[200px] '>Solvonix is known as a quality and affordable logo designing company and has helped numerous big and small companies with their unique Business logo designing. </p>
          </div>
-         <div className='client-right-box flex-1 columns-3  lg:ps-[120px]'>
+         <div className='client-right-box flex-1 columns-3  lg:ps-[120px] pt-10 md:pt-0'>
             {
             clientImges.map((clientImg,index)=>(
             <div className="clinet-img-box" key={index}>
@@ -201,7 +218,7 @@ return (
    </div>
    {/* footer Section */}
    <div
-    className='home-footer relative top-[-295px] z-0 md:z-10 md:top-[0px]'>
+    className='home-footer relative top-[0px] z-0 md:z-10 md:top-[0px]'>
    <Footer/>
 
     </div>

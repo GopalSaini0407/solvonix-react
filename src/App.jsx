@@ -14,18 +14,21 @@ import ReachUs from "./pages/ReachUs";
 // submenu
 import SubComponent from './components/SubComponent';
 
-import Demo from './components/demo';
+import Navbar from './components/Navbar';
+
+import Demo from './components/Demo';
 
 function App() {
 
   return (
     <>
   <Router>
+  <Navbar/>
   <Header/>
     <Routes>
       <Route path='/demo' element={<Demo/>}/>
       <Route path='/' element={<Home/>}/>
-      <Route path='/what-we-do' element={<h1>What We Do page</h1>}/>
+      <Route path='/what-we-do' element={<Home/>}/>
       <Route path='/about' element={<WhoWeAre/>}/>
       <Route path='/careers' element={<Careers/>}/>
       <Route path="/portfolio" element={<Portfolio/>}/>

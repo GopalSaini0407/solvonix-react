@@ -1,22 +1,22 @@
 import { useState } from "react";
-import { MdArrowForwardIos, MdArrowBackIos } from "react-icons/md";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { IoIosArrowForward } from "react-icons/io";
+import PortfolioContent from "./PortfolioContent";
+import Footer from './Footer';
 
 export default function PortfolioTabs() {
   const [activeTab, setActiveTab] = useState("tab1");
 
   const tabData = [
-    { id: "tab1", name: "Print Designs", img: "images/dca.png" },
-    { id: "tab2", name: "App Designs", img: "images/dca.png" },
-    { id: "tab3", name: "Websites", img: "images/dca.png" },
-    { id: "tab4", name: "Logos", img: "images/dca.png" },
-    { id: "tab5", name: "CMS", img: "images/dca.png" },
-    { id: "tab6", name: "Brochure", img: "images/dca.png" },
-    { id: "tab7", name: "Pamphlet", img: "images/dca.png" },
-    { id: "tab8", name: "Card", img: "images/dca.png" },
+    { id: "tab1", name: "Print Designs" , content:<PortfolioContent/>},
+    { id: "tab2", name: "App Designs" },
+    { id: "tab3", name: "Websites" },
+    { id: "tab4", name: "Logos" },
+    { id: "tab5", name: "CMS" },
+    { id: "tab6", name: "Brochure" },
+    { id: "tab7", name: "Pamphlet" },
+    { id: "tab8", name: "Card" },
   ];
 
   const sliderSettings = {
@@ -25,19 +25,17 @@ export default function PortfolioTabs() {
     slidesToShow: 4,
     slidesToScroll: 1,
     arrows: true,
-    prevArrow: <PrevArrow />,
-    nextArrow: <NextArrow />,
     responsive: [
-      { breakpoint: 1024, settings: { slidesToShow: 7 } },
-      { breakpoint: 768, settings: { slidesToShow: 3 } },
+      { breakpoint: 1024, settings: { slidesToShow: 3 } },
+      { breakpoint: 768, settings: { slidesToShow: 2 } },
       { breakpoint: 480, settings: { slidesToShow: 1 } },
     ],
   };
 
   return (
     <div className="shadow-lg rounded-lg bg-white">
-      {/* Tabs with Slider */}
-      <div className="border-b-2 border-gray-200 px-4 bg-[#01012B] pb-[10rem]">
+      {/* Tabs Section with Slick Slider */}
+      <div className="border-b-2 border-gray-200 px-10 bg-[#01012B] py-4 pb-50 ">
         <Slider {...sliderSettings}>
           {tabData.map((tab) => (
             <button
@@ -52,68 +50,24 @@ export default function PortfolioTabs() {
         </Slider>
       </div>
 
-      {/* Tab Content */}
-      <div className="p-6 flex flex-col-reverse md:flex-row md:ms-20 bg-[#FCC81C] relative top-[-50px]">
-        <div className="w-full md:w-1/2">
-
-          {activeTab === "tab1" && <TabContent title1="Delhi Collage of Art" title2="The domain of <br/>
-           art is ever fascinating" 
-           btn="Go to Project" />}
-        </div>
-
-        <div className="w-full md:w-1/2 flex justify-center">
-          <img
-            src={tabData.find((tab) => tab.id === activeTab)?.img}
-            alt="Design"
-            className="w-full rounded-lg"
-          />
-        </div>
+      {/* Content Section */}
+      <div className="p-6">
+        {/* Render active tab content */}
+        {tabData.find((tab) => tab.id === activeTab)?.content}
       </div>
+      <section className="child-four bg-[#ED3E75] text-white p-10 text-center
+      
+      md:pb-30 
+    relative md:top-[160px]
+     z-10 md:z-0
+    
+    ">
+      <p className="text-base md:text-2xl">Whatever be your web designing need, <br /> call us at +918826822211 or write to us at info@solvonix.com</p>
+      <button className="px-3 py-2 md:px-4 md:py-3 rounded bg-white text-[#ED3E75] mt-3">Work With Us</button>
+    </section>
+    <div class="footer relative top-[0px] z-0 md:z-10 md:top-[0px]">
+    <Footer/>
+    </div>
     </div>
   );
 }
-
-// Left Arrow Component
-function PrevArrow(props) {
-  const { onClick } = props;
-  return (
-    <button
-      onClick={onClick}
-      className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full z-10 hover:bg-gray-900"
-    >
-      <MdArrowBackIos size={20} />
-    </button>
-  );
-}
-
-// Right Arrow Component
-function NextArrow(props) {
-  const { onClick } = props;
-  return (
-    <button
-      onClick={onClick}
-      className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full z-10 hover:bg-gray-900"
-    >
-      <MdArrowForwardIos size={20} />
-    </button>
-  );
-}
-
-// Tab Content Component
-function TabContent({ title1,title2,btn }) {
-  return (
-    <div className="text-right md:space-y-10 space-y-2 flex flex-col justify-start md:justify-center items-center md:items-end md:h-100">
-      <h2 className="md:text-2xl text-base font-semibold border-b-2 border-[#F58D31]">{title1}</h2>
-      <h2 className="md:text-2xl text-base font-semibold" dangerouslySetInnerHTML={{ __html: title2 }} />
-       
-       {
-        btn && <button className="px-3 py-2 font-light border rounded text-base border-[F48E32] md:text-3xl flex items-center">{btn} <IoIosArrowForward /></button>
-
-       }
-       
-     
-    </div>
-  );
-}
-
-

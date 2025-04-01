@@ -5,8 +5,8 @@ import { MdMarkEmailUnread } from "react-icons/md";
 export default function ReachUs() {
   return (
     <div className='reach-us'>
-      <div className='pb-80 bg-[#01012B]'></div>
-      <div className='flex max-w-[1200px] mx-auto relative top-[-250px]'>
+      <div className='md:pb-80 bg-[#01012B]'></div>
+      <div className='flex max-w-[1200px] mx-auto relative md:top-[-250px]'>
         <div className='flex flex-col md:flex-row w-full'>
         <div className='address-reach-us bg-[#EE3E77] w-full md:flex-1/6 p-4'>
        <h4 className='flex items-center text-white text-2xl font-bold'> <span className='text-4xl'><GrLocation /></span>  Our Offices</h4>
@@ -71,7 +71,6 @@ export default function ReachUs() {
         </div>
 
       </div>
-      <div className='pb-50 md:hidden md:pb-30 relative top-[290px] z-10 md:z-0  bg-white'></div>
       <div className="reach-us-footer relative top-[0px] z-0 md:z-10 md:top-[0px]">
         <Footer/>
       </div>

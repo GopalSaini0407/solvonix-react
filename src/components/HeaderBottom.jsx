@@ -92,20 +92,36 @@ const contentData = {
   },
   
 };
+
+import {motion} from "framer-motion"
+
 export default function HeaderBottom() {
   const { pathname } = useLocation(); // Correct way to get the current path  
   const content = contentData[pathname] || contentData["/home"]; // Correct fallback
 
   return (
     <>
-      <div className='bottom-header text-center text-white p-4 mt-12 bg-[#01012B]'>
-        <h6 className='text-2xl sm:text-7xl font-thin'>
+      <div className='bottom-header text-center text-white p-4 md:pt-16 bg-[#01012B]'>
+        <motion.h6 className='text-2xl sm:text-5xl lg:text-7xl font-thin'
+        
+         initial={{ opacity:0,x:-550}}
+         whileInView={{ opacity:1, x:0}}
+         transition={{ duration:0.5 }}
+         viewport={{ once:true }}
+        >
           {content.heading1} <br /> {content.heading2}
-        </h6>
+        </motion.h6>
         {content.para1 && (
-          <p className='text-base font-thin sm:text-3xl py-6 '>
+          <motion.p className='text-base font-thin sm:text-2xl lg:text-3xl py-6 '
+          
+          initial={{ opacity:0,x:550}}
+          whileInView={{ opacity:1, x:0}}
+          transition={{ duration:0.5 }}
+          viewport={{ once:true }}
+
+          >
             {content.para1} <br /> {content.para2} 
-          </p>
+          </motion.p>
         )}
         {content.btn && (
           <button className='btn bg-[#EC3E73] text-white px-4 py-2 sm:px-6 sm:py-3 rounded'>
@@ -117,11 +133,17 @@ export default function HeaderBottom() {
         {content.arrorIcon && (
           
           
-            <div className='justify-center flex mt-10'>
+            <motion.div className='justify-center flex mt-10'
+            initial={{ opacity:0, y:100}}
+            whileInView={{ opacity:1, y:0}}
+            transition={{ duration:0.5 }}
+            viewport={{ once:true }}
+  
+            >
             <div onClick={()=> <Link to="/about">ram</Link>} className='bg-white rounded-[50%] flex size-[50px] sm:size-[65px] justify-center items-center'>
             <img src={content.arrorIcon} alt="img" />    
             </div>
-            </div>
+            </motion.div>
            
           )
         }
@@ -139,7 +161,7 @@ export default function HeaderBottom() {
 
         {
           content.careerImg &&(
-              <div className='lg:py-20 lg:pb-70 md:pb-50 lg:relative mx-0 px-0'> 
+              <div className='pt-5 lg:pb-70 md:pb-50 lg:relative mx-0 px-0'> 
                 <div className="careerGallary lg:absolute grid grid-flow-col grid-cols-1 grid-rows-5 md:grid-rows-3 md:grid-cols-3  gap-3 sm:h-100">
               <div className="careerImg md:row-span-3">
                 <img src={content.careerImg.careerImg1} className='object-cover size-full' alt="img" />

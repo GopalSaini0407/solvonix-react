@@ -993,7 +993,7 @@ const subcontentData = {
                   ]
                   },
                   "/content-creation": {
-                    cls: "website-development-box",
+                    cls: "content-creation-box",
                     title: "Content Creation Service",
                     subtitle: "Serving numerous of our happy clients from different industries across the globe, Solvonix has been helping them enjoy the miracles of great, original, and appealing content forever.",
                     description: [

@@ -53,7 +53,7 @@ export default function Careers() {
       </section>
    
       </div>
-       <div className="career-footer relative top-[-295px] z-0 md:z-10 md:top-[0px]">
+       <div className="career-footer relative  z-0 md:z-10 md:top-[0px]">
         <Footer/>
        </div>
     </div>

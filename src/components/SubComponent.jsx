@@ -35,13 +35,13 @@ const SubComponent = () => {
       }
        
        {
-        pageData.subtitle && <p className="relative overflow-hidden py-4 md:text-3xl text-[#EE3E77]">{pageData.subtitle}</p>
+        pageData.subtitle && <p className="relative pink_txt  py-4 mt-5 md:text-2xl text-[#EE3E77]">{pageData.subtitle}</p>
        }
         
 
           
         {pageData.description && pageData.description.map((para, index) => (
-          <p key={index} className={`text-[${index === 0 ? "#2d2d2d" : "#A0A0A0"}] text-[14px]`}>
+          <p key={index} className={`text-[${index === 0 ? "#2d2d2d" : "#A0A0A0"}] md:text-[17px] text-[14px] opacity-70`}>
             {para}
           </p>
         ))}
@@ -76,15 +76,14 @@ const SubComponent = () => {
 
       {/* Footer Section */}
       <section className="child-four bg-[#ED3E75] text-white p-10 text-center
-      pb-50 
-     md:pb-60 
-      relative top-[290px]
+      
+        md:pb-30 
+      relative md:top-[160px]
        z-10 md:z-0
       
-      
       ">
-        <p className="text-2xl">Whatever be your web designing need, <br /> call us at +918826822211 or write to us at info@solvonix.com</p>
-        <button className="px-4 py-3 rounded bg-white text-[#ED3E75] mt-3">Work With Us</button>
+        <p className="text-base md:text-2xl">Whatever be your web designing need, <br /> call us at +918826822211 or write to us at info@solvonix.com</p>
+        <button className="px-3 py-2 md:px-4 md:py-3 rounded bg-white text-[#ED3E75] mt-3">Work With Us</button>
       </section>
       <div className="footer relative top-[0px] z-0 md:z-10 md:top-[0px]">
       <Footer />

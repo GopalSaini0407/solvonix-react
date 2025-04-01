@@ -2,14 +2,14 @@ import React from 'react'
 
 function WeDoSection({pageData}) {
   return (
-    <section className="child-three pt-[80px] flex">
+    <section className="child-three pt-[80px] flex flex-col md:flex-row">
           <div className="child-three-left flex-1/2">
           {
-            pageData.weDoTitle && <h2 className="font-extralight text-[#000022] md:text-6xl py-4">{pageData.weDoTitle}</h2>
+            pageData.weDoTitle && <h2 className="font-extralight text-[#000022] text-6xl py-4">{pageData.weDoTitle}</h2>
 
           }
           {
-            pageData.weDoDescription && <p className="text-[#777] md:text-[18px] leading-8 font-[300]">{pageData.weDoDescription}</p>
+            pageData.weDoDescription && <p className="text-[#777] text-[18px] leading-8 font-[300]">{pageData.weDoDescription}</p>
 
           }
             <button className="rounded py-3 px-5 bg-[#EC3E73] text-white my-8">Explore More</button>
