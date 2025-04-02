@@ -109,9 +109,9 @@ export default function HeaderBottom() {
         {
           content.heading1 && (
             <motion.h6 className='text-2xl sm:text-5xl lg:text-7xl font-thin'
-            initial={{ opacity:0,x:-550}}
+            initial={{ opacity:0,x:-100}}
             whileInView={{ opacity:1, x:0}}
-            transition={{ duration:0.5 }}
+            transition={{ duration:0.8 }}
             viewport={{ once:true }}
            >
              {content.heading1} <br /> {content.heading2}
@@ -124,7 +124,7 @@ export default function HeaderBottom() {
           
           initial={{ opacity:0,x:550}}
           whileInView={{ opacity:1, x:0}}
-          transition={{ duration:0.5 }}
+          transition={{ duration:0.8 }}
           viewport={{ once:true }}
 
           >
@@ -145,7 +145,7 @@ export default function HeaderBottom() {
             <motion.div className='justify-center flex mt-10'
             initial={{ opacity:0, y:100}}
             whileInView={{ opacity:1, y:0}}
-            transition={{ duration:0.5 }}
+            transition={{ duration:0.8 }}
             viewport={{ once:true }}
   
             >

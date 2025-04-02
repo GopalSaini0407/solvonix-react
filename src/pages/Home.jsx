@@ -62,7 +62,7 @@ return (
          <motion.div className='flex-1'
          initial={{ opacity:0, y:100}}
          whileInView={{ opacity:1, y:0}}
-         transition={{ duration:0.5 }}
+         transition={{ duration:0.8 }}
          viewport={{ once:true }}
          >
          <h5 className='text-[#EA3E70] font-light text-base'>Who We Are</h5>
@@ -79,7 +79,7 @@ return (
          <motion.div className='flex-1 px-3'
          initial={{ opacity:0, x:-300}}
          whileInView={{ opacity:1, x:0}}
-         transition={{ duration:0.5 }}
+         transition={{ duration:0.8 }}
          viewport={{ once:true }}>
          <img src='images/who_we.png' alt='Who We Are' className='w-full' />
          </motion.div>
@@ -113,9 +113,9 @@ return (
          <div className="grid md:grid-rows-3 grid-rows-1 justify-center">
          <motion.div 
   className="flex justify-center gap-9 flex-col items-center md:flex-row"
-  initial={{ opacity: 0, x: -200, rotate: -20 }} // Initial rotation added
+  initial={{ opacity: 0, x: -100, rotate: -20 }} // Initial rotation added
   whileInView={{ opacity: 1, x: 0, rotate: 0 }} // Rotates to normal position
-  transition={{ duration: 0.5, ease: "easeOut" }} 
+  transition={{ duration: 0.8, ease: "easeOut" }} 
   viewport={{ once: true, amount: 0.2 }}
 >
 
@@ -138,9 +138,9 @@ return (
                </div>
             </motion.div>
             <motion.div className="flex justify-center gap-9 flex-col items-center md:flex-row"
-              initial={{ opacity: 0, x: -300, rotate: -20 }} // Initial rotation added
+              initial={{ opacity: 0, x: -100, rotate: -20 }} // Initial rotation added
               whileInView={{ opacity: 1, x: 0, rotate: 0 }} // Rotates to normal position
-              transition={{ duration: 0.5, ease: "easeOut" }} 
+              transition={{ duration: 0.8, ease: "easeOut" }} 
               viewport={{ once: true, amount: 0.2 }}
             >
                <div className="solvonix-work-box size-[175px] mt-[36px] md:mt-0 items-center justify-center flex flex-col border duration-500 border-dashed border-[#EE3E77] p-4 rounded-full text-center hover:text-white hover:bg-[#EE3E77]">
@@ -161,9 +161,9 @@ return (
                </div>
             </motion.div>
             <motion.div className="flex justify-center gap-9 flex-col items-center md:flex-row"
-              initial={{ opacity: 0, x: -400, rotate: -20 }} // Initial rotation added
+              initial={{ opacity: 0, x: -100, rotate: -20 }} // Initial rotation added
               whileInView={{ opacity: 1, x: 0, rotate: 0 }} // Rotates to normal position
-              transition={{ duration: 0.5, ease: "easeOut" }} 
+              transition={{ duration: 0.8, ease: "easeOut" }} 
               viewport={{ once: true, amount: 0.2 }}>
                <div className="solvonix-work-box size-[175px] mt-[36px] md:mt-0 items-center justify-center flex flex-col border duration-500 border-dashed border-[#EE3E77] p-4 rounded-full text-center hover:text-white hover:bg-[#EE3E77]">
                   <img src="images/healthcare.png" alt="img"/>
@@ -195,7 +195,7 @@ return (
          <motion.div className='why-choose-left-box flex-1'
            initial={{ opacity:0, y:100}}
            whileInView={{ opacity:1, y:0}}
-           transition={{ duration:0.5 }}
+           transition={{ duration:0.8 }}
            viewport={{ once:true }}
          >
             <h5 className='text-[#EA3E70]'>Why Choose</h5>
@@ -211,7 +211,7 @@ return (
          <motion.div className='why-choose-right-box flex-1 flex lg:justify-end'
            initial={{ opacity:0, x:-300}}
            whileInView={{ opacity:1, x:0}}
-           transition={{ duration:0.5 }}
+           transition={{ duration:0.8 }}
            viewport={{ once:true }}>
             <img src="images/choose_img.png" alt="img" />
          </motion.div>
@@ -220,7 +220,7 @@ return (
       <motion.section className='choose_plans grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-9 mx-5'
       initial={{ opacity:0, y:-100}}
       whileInView={{ opacity:1, y:0}}
-      transition={{ duration:0.5 }}
+      transition={{ duration:0.8 }}
       viewport={{ once:true }}
       >
          {
@@ -245,9 +245,9 @@ return (
          </div>
          <motion.div className='client-right-box flex-1 columns-3  lg:ps-[120px] pt-10 md:pt-0'
          
-         initial={{ opacity:0, x:300}}
+         initial={{ opacity:0, x:100}}
            whileInView={{ opacity:1, x:0}}
-           transition={{ duration:0.5 }}
+           transition={{ duration:0.8 }}
            viewport={{ once:true }}
          >
             {
@@ -262,7 +262,7 @@ return (
          
          initial={{ opacity:0, y:-100}}
          whileInView={{ opacity:1, y:0}}
-         transition={{ duration:0.5 }}
+         transition={{ duration:0.8 }}
          viewport={{ once:true }}>
             <div className='bg-[#EE3E77;] w-[205px] h-[205px] relative rounded-[50%]'>
                <img src="images/clients_man.png" className='relative left-[33px] top-[-42px]' alt="img"/>
