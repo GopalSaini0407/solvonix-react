@@ -70,7 +70,7 @@ html, body {
 
 .footer-main
 {
-  background-image: url('../public/images/footer_bg.png');
+  background-image: url('/images/footer_bg.png');
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
