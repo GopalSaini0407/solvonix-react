@@ -1,5 +1,7 @@
 import React from 'react'
 import { useLocation,Link } from "react-router-dom";
+import {motion} from "framer-motion"
+
 
 const contentData = {
   "/home": {
@@ -18,6 +20,8 @@ const contentData = {
   "/careers": {
     heading1: `Be a part of this`,
     heading2: ` unforgettable journey`,
+    text:"See Open Positions",
+    downIcon:"images/carrow.png",
     careerImg:{
       careerImg1:'images/cimg1.png',
       careerImg2:'images/cimg2.png',
@@ -30,6 +34,7 @@ const contentData = {
   "/portfolio": {
     heading1: `Our Work Doesn’t fit`,
     heading2: ` fit into any Drawer`,
+   
   },
   "/reach-us": {
     heading1: `Every Client Brings`,
@@ -93,7 +98,6 @@ const contentData = {
   
 };
 
-import {motion} from "framer-motion"
 
 export default function HeaderBottom() {
   const { pathname } = useLocation(); // Correct way to get the current path  
@@ -102,15 +106,19 @@ export default function HeaderBottom() {
   return (
     <>
       <div className='bottom-header text-center text-white p-4 md:pt-16 bg-[#01012B]'>
-        <motion.h6 className='text-2xl sm:text-5xl lg:text-7xl font-thin'
-        
-         initial={{ opacity:0,x:-550}}
-         whileInView={{ opacity:1, x:0}}
-         transition={{ duration:0.5 }}
-         viewport={{ once:true }}
-        >
-          {content.heading1} <br /> {content.heading2}
-        </motion.h6>
+        {
+          content.heading1 && (
+            <motion.h6 className='text-2xl sm:text-5xl lg:text-7xl font-thin'
+            initial={{ opacity:0,x:-550}}
+            whileInView={{ opacity:1, x:0}}
+            transition={{ duration:0.5 }}
+            viewport={{ once:true }}
+           >
+             {content.heading1} <br /> {content.heading2}
+           </motion.h6>
+          )
+        }
+    
         {content.para1 && (
           <motion.p className='text-base font-thin sm:text-2xl lg:text-3xl py-6 '
           
@@ -123,6 +131,7 @@ export default function HeaderBottom() {
             {content.para1} <br /> {content.para2} 
           </motion.p>
         )}
+        
         {content.btn && (
           <button className='btn bg-[#EC3E73] text-white px-4 py-2 sm:px-6 sm:py-3 rounded'>
             {content.btn}
@@ -158,26 +167,59 @@ export default function HeaderBottom() {
 
           )
         }
+    
+    
+    {
+      content.text && (
+        <div className='flex flex-col items-center py-5 text-[#EE3E77]'>
+          <p>{content.text}</p>
+          <img src={content.downIcon} alt="img" />
+        </div>
 
+      )
+    }
+          
         {
           content.careerImg &&(
               <div className='pt-5 lg:pb-70 md:pb-50 lg:relative mx-0 px-0'> 
                 <div className="careerGallary lg:absolute grid grid-flow-col grid-cols-1 grid-rows-5 md:grid-rows-3 md:grid-cols-3  gap-3 sm:h-100">
-              <div className="careerImg md:row-span-3">
+              <motion.div className="careerImg md:row-span-3"
+               initial={{ opacity:0, x:-300}}
+               whileInView={{ opacity:1, x:0}}
+               transition={{ duration:0.5 }}
+               viewport={{ once:true }}
+              >
                 <img src={content.careerImg.careerImg1} className='object-cover size-full' alt="img" />
-                </div>
-              <div className="careerImg md:row-span-2 ">
+                </motion.div>
+              <motion.div className="careerImg md:row-span-2 "
+               initial={{ opacity:0, y:-300}}
+               whileInView={{ opacity:1, y:0}}
+               transition={{ duration:0.5 }}
+               viewport={{ once:true }}
+              >
                 <img src={content.careerImg.careerImg2} className='object-cover size-full' alt="img" />
-                </div>
-              <div className="careerImg">
+                </motion.div>
+              <motion.div className="careerImg"
+               initial={{ opacity:0, y:100}}
+               whileInView={{ opacity:1, y:0}}
+               transition={{ duration:0.5 }}
+               viewport={{ once:true }}>
                 <img src={content.careerImg.careerImg3} className='object-cover size-full' alt="img" />
-                </div>
-              <div className="careerImg">
+                </motion.div>
+              <motion.div className="careerImg"
+               initial={{ opacity:0, x:300}}
+               whileInView={{ opacity:1, x:0}}
+               transition={{ duration:0.5 }}
+               viewport={{ once:true }}>
                 <img src={content.careerImg.careerImg4} className='object-cover size-full' alt="img" />
-                </div>
-              <div className="careerImg md:row-span-2">
+                </motion.div>
+              <motion.div className="careerImg md:row-span-2"
+               initial={{ opacity:0, x:300}}
+               whileInView={{ opacity:1, x:0}}
+               transition={{ duration:0.5 }}
+               viewport={{ once:true }}>
                 <img src={content.careerImg.careerImg5} className='object-cover size-full' alt="img" />
-                </div>
+                </motion.div>
                 </div>
               </div>
             

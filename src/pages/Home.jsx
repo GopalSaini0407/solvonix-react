@@ -3,7 +3,7 @@ import HomeSlider from '../components/HomeSlider';
 import Counter from '../components/Counter';
 import Footer from '../components/Footer';
 import {motion} from "framer-motion"
-
+import { Helmet } from "react-helmet-async";
 
 export default function Home() {
 const ServiceData=[
@@ -48,39 +48,41 @@ const clientImges=[
 {img:"images/client8.png"},
 {img:"images/client9.png"}
 ]
-
 return (
+   <>
+
+
 <div className="home-container">
    <div className='home max-w-[1200px] mx-auto'>
       {/* Who We Are Section */}
       <div className='home-who-we-are flex p-4 flex-col-reverse md:flex-row md:py-20'>
          <motion.div className='flex-1'
-          initial={{ opacity:0, y:100}}
-          whileInView={{ opacity:1, y:0}}
-          transition={{ duration:0.5 }}
-          viewport={{ once:true }}
+         initial={{ opacity:0, y:100}}
+         whileInView={{ opacity:1, y:0}}
+         transition={{ duration:0.5 }}
+         viewport={{ once:true }}
          >
-            <h5 className='text-[#EA3E70] font-light text-base'>Who We Are</h5>
-            <h2 className='text-2xl sm:text-4xl lg:text-6xl py-3 leading-none font-extralight'>
-               India's Leading Internet Marketing Service Provider
-            </h2>
-            <p className='font-extralight text-base text-[#A0A0A0] leading-[25px]'>
-               Solvonix is a professional SEO company in India. We provide expert SEO services to our
-               domestic as well as international clients at an affordable price. We have carved a
-               niche in the internet marketing industry for our skills and commitment to providing the
-               best Search Engine Optimization services to our esteemed clients.
-            </p>
+         <h5 className='text-[#EA3E70] font-light text-base'>Who We Are</h5>
+         <h2 className='text-2xl sm:text-4xl lg:text-6xl py-3 leading-none font-extralight'>
+            India's Leading Internet Marketing Service Provider
+         </h2>
+         <p className='font-extralight text-base text-[#A0A0A0] leading-[25px]'>
+            Solvonix is a professional SEO company in India. We provide expert SEO services to our
+            domestic as well as international clients at an affordable price. We have carved a
+            niche in the internet marketing industry for our skills and commitment to providing the
+            best Search Engine Optimization services to our esteemed clients.
+         </p>
          </motion.div>
          <motion.div className='flex-1 px-3'
-           initial={{ opacity:0, x:-300}}
-           whileInView={{ opacity:1, x:0}}
-           transition={{ duration:0.5 }}
-           viewport={{ once:true }}>
-            <img src='images/who_we.png' alt='Who We Are' className='w-full' />
+         initial={{ opacity:0, x:-300}}
+         whileInView={{ opacity:1, x:0}}
+         transition={{ duration:0.5 }}
+         viewport={{ once:true }}>
+         <img src='images/who_we.png' alt='Who We Are' className='w-full' />
          </motion.div>
       </div>
       {/* Counter Section */}
-         <Counter borderColor="#EA3E70"/>
+      <Counter borderColor="#EA3E70"/>
       {/* Services Section */}
       <section className='home-services md:pt-[80px] pb-[50px] text-center'>
          <h6 className='text-[#EA3E70] text-[18px]'>Services</h6>
@@ -88,18 +90,17 @@ return (
          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-9 md:mt-[60px]'>
             {ServiceData.map((service, index) => (
             <div key={index} className='home-services-content grid justify-center md:px-9 relative group'>
-  <span className="absolute left-1/2 top-5 w-0 h-[2px] bg-white transform -translate-x-1/2 group-hover:w-[95%] transition-all duration-500 ease-in-out"></span>
- <span className='absolute right-5 top-1/2 w-[2px] h-[0%] bg-white transform -translate-y-1/2 group-hover:h-[95%] transition-all duration-500 ease-in-out'></span>
-<span className='absolute left-1/2 bottom-5 w-[0%] h-[2px] bg-white transform -translate-x-1/2 group-hover:w-[95%] transition-all duration-500 ease-in-out'></span>
- <span className='absolute left-5 top-1/2 w-[2px] h-[0%] bg-white transform -translate-y-1/2 group-hover:h-[95%] transition-all duration-500 ease-in-out'></span>
-
+               <span className="absolute left-1/2 top-5 w-0 h-[2px] bg-white transform -translate-x-1/2 group-hover:w-[95%] transition-all duration-500 ease-in-out"></span>
+               <span className='absolute right-5 top-1/2 w-[2px] h-[0%] bg-white transform -translate-y-1/2 group-hover:h-[95%] transition-all duration-500 ease-in-out'></span>
+               <span className='absolute left-1/2 bottom-5 w-[0%] h-[2px] bg-white transform -translate-x-1/2 group-hover:w-[95%] transition-all duration-500 ease-in-out'></span>
+               <span className='absolute left-5 top-1/2 w-[2px] h-[0%] bg-white transform -translate-y-1/2 group-hover:h-[95%] transition-all duration-500 ease-in-out'></span>
                <div className='service-img-box flex justify-center'>
                   <img src={service.img} alt={service.title} />
                </div>
-               <h3 className='text-[#323232] text-md lg:text-xl mt-[20px] font-semibold text-center pb-7'>
+               <h3 className='text-[#323232] text-2xl lg:text-xl mt-[20px] font-semibold text-center pb-7'>
                   {service.title}
                </h3>
-               <p className='text-white'>{service.para}</p>
+               <p className='text-white pt-5 sm:pt-0'>{service.para}</p>
             </div>
             ))}
          </div>
@@ -107,10 +108,23 @@ return (
       {/* Work Section */}
       <section className='solvonix-work grid justify-center pb-[100px]'>
          <div className="grid md:grid-rows-3 grid-rows-1 justify-center">
-            <div className="flex justify-center gap-9 flex-col items-center md:flex-row">
-            <div className="solvonix-work-box size-[175px] items-center justify-center md:hidden text-[#EE3E77] border-[#EE3E77] p-4 rounded-full text-center">
+         <motion.div 
+  className="flex justify-center gap-9 flex-col items-center md:flex-row"
+  initial={{ opacity: 0, x: -200, rotate: -20 }} // Initial rotation added
+  whileInView={{ opacity: 1, x: 0, rotate: 0 }} // Rotates to normal position
+  transition={{ duration: 0.5, ease: "easeOut" }} 
+  viewport={{ once: true, amount: 0.2 }}
+>
+
+               <motion.div className="solvonix-work-box size-[175px] items-center justify-center md:hidden text-[#EE3E77] border-[#EE3E77] p-4 rounded-full text-center"
+                initial={{ opacity:0, scale:0}}
+                whileInView={{ opacity:1, scale:1}}
+                transition={{ duration:0.8, ease:"easeInOut" }}
+                viewport={{ once:true }}        
+
+               >
                   <h1 className='text-[2rem]  font-bold'>What Solvonix done?</h1>
-               </div>
+               </motion.div>
                <div className="solvonix-work-box size-[175px] items-center justify-center flex flex-col border duration-500 border-dashed border-[#EE3E77] p-4 rounded-full text-center hover:text-white hover:bg-[#EE3E77]">
                   <img src="images/education.png" alt="img"/>
                   <h3 className='mt-[20px]'>Education</h3>
@@ -119,22 +133,35 @@ return (
                   <img src="images/hospitality.png" alt="img"/>
                   <h3 className='mt-[20px]'>Hospitality</h3>
                </div>
-            </div>
-
-            <div className="flex justify-center gap-9 flex-col items-center md:flex-row">
+            </motion.div>
+            <motion.div className="flex justify-center gap-9 flex-col items-center md:flex-row"
+              initial={{ opacity: 0, x: -300, rotate: -20 }} // Initial rotation added
+              whileInView={{ opacity: 1, x: 0, rotate: 0 }} // Rotates to normal position
+              transition={{ duration: 0.5, ease: "easeOut" }} 
+              viewport={{ once: true, amount: 0.2 }}
+            >
                <div className="solvonix-work-box size-[175px] mt-[36px] md:mt-0 items-center justify-center flex flex-col border duration-500 border-dashed border-[#EE3E77] p-4 rounded-full text-center hover:text-white hover:bg-[#EE3E77]">
                   <img src="images/hotels.png" alt="img"/>
                   <h3 className='mt-[20px]'>Hotels</h3>
                </div>
-               <div className="solvonix-work-box size-[175px] items-center justify-center md:flex flex-col hidden  text-[#EE3E77] border-[#EE3E77] p-4 rounded-full text-center">
+               <motion.div className="solvonix-work-box size-[175px] items-center justify-center md:flex flex-col hidden  text-[#EE3E77] border-[#EE3E77] p-4 rounded-full text-center"
+                initial={{ opacity:0, scale:0}}
+                whileInView={{ opacity:1, scale:1}}
+                transition={{ duration:0.8, ease:"easeInOut" }}
+                viewport={{ once:true }}        
+               >
                   <h1 className='text-[2rem]  font-bold'>What Solvonix done?</h1>
-               </div>
+               </motion.div>
                <div className="solvonix-work-box size-[175px] items-center justify-center flex flex-col border duration-500 border-dashed border-[#EE3E77] p-4 rounded-full text-center hover:text-white hover:bg-[#EE3E77]">
                   <img src="images/gaming.png" alt="img"/>
                   <h3 className='mt-[20px]'>iGamin</h3>
                </div>
-            </div>
-            <div className="flex justify-center gap-9 flex-col items-center md:flex-row">
+            </motion.div>
+            <motion.div className="flex justify-center gap-9 flex-col items-center md:flex-row"
+              initial={{ opacity: 0, x: -400, rotate: -20 }} // Initial rotation added
+              whileInView={{ opacity: 1, x: 0, rotate: 0 }} // Rotates to normal position
+              transition={{ duration: 0.5, ease: "easeOut" }} 
+              viewport={{ once: true, amount: 0.2 }}>
                <div className="solvonix-work-box size-[175px] mt-[36px] md:mt-0 items-center justify-center flex flex-col border duration-500 border-dashed border-[#EE3E77] p-4 rounded-full text-center hover:text-white hover:bg-[#EE3E77]">
                   <img src="images/healthcare.png" alt="img"/>
                   <h3 className='mt-[20px]'>Healthcare</h3>
@@ -143,7 +170,7 @@ return (
                   <img src="images/real_estate.png" alt="img"/>
                   <h3 className='mt-[20px]'>Education</h3>
                </div>
-            </div>
+            </motion.div>
          </div>
       </section>
    </div>
@@ -162,7 +189,12 @@ return (
    <div className='middle-container max-w-[1200px] mx-auto'>
       {/* why-choose Section */}
       <section className='why-choose flex py-[5rem] px-5 flex-col-reverse items-center md:flex-row'>
-         <div className='why-choose-left-box flex-1'>
+         <motion.div className='why-choose-left-box flex-1'
+           initial={{ opacity:0, y:100}}
+           whileInView={{ opacity:1, y:0}}
+           transition={{ duration:0.5 }}
+           viewport={{ once:true }}
+         >
             <h5 className='text-[#EA3E70]'>Why Choose</h5>
             <h2 className='text-[#000022]  text-4xl lg:text-[54px] font-extralight'>Solvonix</h2>
             <ul className="md:leading-[36px] leading-[20px] text-[#8F8F8F] text-[15px]">
@@ -172,13 +204,22 @@ return (
                <li className="bg-[url(/images/choose_listicon.jpg)] bg-no-repeat bg-left bg-postision flex lg:items-center pl-6">Industry benchmark SEO Service by Leader &amp; Experts</li>
                <li className="bg-[url(/images/choose_listicon.jpg)] bg-no-repeat bg-left bg-postision flex lg:items-center pl-6">One- stop solution for All tour Internet Marketing Needs</li>
             </ul>
-         </div>
-         <div className='why-choose-right-box flex-1 flex lg:justify-end'>
+         </motion.div>
+         <motion.div className='why-choose-right-box flex-1 flex lg:justify-end'
+           initial={{ opacity:0, x:-300}}
+           whileInView={{ opacity:1, x:0}}
+           transition={{ duration:0.5 }}
+           viewport={{ once:true }}>
             <img src="images/choose_img.png" alt="img" />
-         </div>
+         </motion.div>
       </section>
       {/* choose-plains Section */}
-      <section className='choose_plans grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-9 mx-5'>
+      <motion.section className='choose_plans grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-9 mx-5'
+      initial={{ opacity:0, y:-100}}
+      whileInView={{ opacity:1, y:0}}
+      transition={{ duration:0.5 }}
+      viewport={{ once:true }}
+      >
          {
          choosePlanData.map((plan, index) => (
          <div key={index} className="plans-box text-center sm:text-left border-t-3 border-t-[#EA3E70] md:p-5 p-0 relative font-bold hover:text-[white]
@@ -191,7 +232,7 @@ return (
          </div>
          ))
          }
-      </section>
+      </motion.section>
       {/* our-client Section */}
       <section className='our-client flex mt-9 relative flex-col lg:flex-row px-5 pb-[50px] bg-white z-10'>
          <div className='client-left-box flex-1 bg-[#F7F7F7] text-center sm:text-left'>
@@ -199,7 +240,13 @@ return (
             <h2 className='text-[#000022] font-extralight mt-1 mb-4 text-2xl md:text-[3rem]'>Our Clients</h2>
             <p className='text-[#777] text-[14px] md:text-[20px] lg:pe-[200px] '>Solvonix is known as a quality and affordable logo designing company and has helped numerous big and small companies with their unique Business logo designing. </p>
          </div>
-         <div className='client-right-box flex-1 columns-3  lg:ps-[120px] pt-10 md:pt-0'>
+         <motion.div className='client-right-box flex-1 columns-3  lg:ps-[120px] pt-10 md:pt-0'
+         
+         initial={{ opacity:0, x:300}}
+           whileInView={{ opacity:1, x:0}}
+           transition={{ duration:0.5 }}
+           viewport={{ once:true }}
+         >
             {
             clientImges.map((clientImg,index)=>(
             <div className="clinet-img-box" key={index}>
@@ -207,21 +254,28 @@ return (
             </div>
             ))
             }
-         </div>
-
-         <div className="client-middle-box hidden lg:block absolute left-1/3 top-1/3 ">
+         </motion.div>
+         <motion.div className="client-middle-box hidden lg:block absolute left-1/3 top-1/3 "
+         
+         initial={{ opacity:0, y:-100}}
+         whileInView={{ opacity:1, y:0}}
+         transition={{ duration:0.5 }}
+         viewport={{ once:true }}>
             <div className='bg-[#EE3E77;] w-[205px] h-[205px] relative rounded-[50%]'>
                <img src="images/clients_man.png" className='relative left-[33px] top-[-42px]' alt="img"/>
             </div>
-         </div>
+         </motion.div>
       </section>
    </div>
    {/* footer Section */}
    <div
-    className='home-footer relative top-[0px] z-0 md:z-10 md:top-[0px]'>
-   <Footer/>
-
-    </div>
+      className='home-footer relative top-[0px] z-0 md:z-10 md:top-[0px]'>
+      <Footer/>
+   </div>
 </div>
+   
+   
+   </>
+
 );
 }

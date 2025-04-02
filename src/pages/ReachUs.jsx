@@ -1,10 +1,26 @@
-import React from 'react';
+import React,{useState} from 'react';
 import Footer from '../components/Footer';
 import { GrLocation } from "react-icons/gr";
 import { MdMarkEmailUnread } from "react-icons/md";
+import ReCAPTCHA from "react-google-recaptcha";
+import { Helmet } from "react-helmet-async";
 export default function ReachUs() {
+
+  const [captchaValue, setCaptchaValue] = useState(null);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!captchaValue) {
+      alert("Please verify the reCAPTCHA");
+      return;
+    }
+    alert("Form submitted successfully!");
+  };
+
   return (
-    <div className='reach-us'>
+
+    <>
+<div className='reach-us'>
       <div className='md:pb-80 bg-[#01012B]'></div>
       <div className='flex max-w-[1200px] mx-auto relative md:top-[-250px]'>
         <div className='flex flex-col md:flex-row w-full'>
@@ -29,6 +45,7 @@ export default function ReachUs() {
          </div>
         </div>
         <div className='reach-us-form md:flex-1/2 w-full p-8 bg-white'>
+        <form onSubmit={handleSubmit}>
         <div className='flex items-center justify-between'>
         <h4 className='text-2xl'>Get in Touch</h4>
         <span className='text-5xl text-[#EE3E77]'><MdMarkEmailUnread /></span>
@@ -65,8 +82,12 @@ export default function ReachUs() {
          className='border-0 outline-0 border-b-[1px] p-2 border-gray-400 text-gray-400'
          />
         </div>
-          
-          <button className='px-3 py-3 rounded bg-[#EE3E77] text-white font-light w-full text-center mt-5 hover:bg-black text-2xl'>Send</button>
+            <ReCAPTCHA
+        sitekey="6Lf-LAcrAAAAAHeKy17I9XLg7jsLShRovKqCfD47"  // Google se milega
+        onChange={(value) => setCaptchaValue(value)}
+      />
+          <button type="submit" className='px-3 py-3 rounded bg-[#EE3E77] text-white font-light w-full text-center mt-5 hover:bg-black text-2xl'>Send</button>
+          </form>
         </div>
         </div>
 
@@ -75,5 +96,8 @@ export default function ReachUs() {
         <Footer/>
       </div>
     </div>
+    
+    </>
+  
   )
 }

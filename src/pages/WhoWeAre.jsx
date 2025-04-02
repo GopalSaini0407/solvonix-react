@@ -1,12 +1,22 @@
 import React from 'react';
 import Counter from '../components/Counter';
 import Footer from '../components/Footer';
+import {motion} from "framer-motion"
+import { Helmet } from "react-helmet-async";
 
 export default function WhoWeAre() {
   return (
-    <div className='about h-100'>
+
+    <>
+
+<div className='about h-100'>
       <div className='max-w-[1200px] mx-auto'>
-        <section className='about-solvonix p-3 lg:pt-65 lg:mx-25'>
+        <motion.section className='about-solvonix p-3 lg:pt-65 lg:mx-25'
+          initial={{ opacity:0, y:200}}
+          whileInView={{ opacity:1, y:0}}
+          transition={{ duration:0.8 }}
+          viewport={{ once:true }}
+            >
           <div className="title text-center lg:text-left">
           <h5 className='text-[#EA3E70] lg:text-1xl'>About Solvonix Technologies</h5>
           <h2 className='text-[#000022] lg:text-5xl  font-light lg:my-4'>We Develop <br /> More than Mobile Apps</h2>
@@ -24,7 +34,7 @@ export default function WhoWeAre() {
                             <li className="bg-[url(/images/choose_listicon.jpg)] bg-no-repeat bg-left flex items-center pl-6">Software Development</li>
                             <li className="bg-[url(/images/choose_listicon.jpg)] bg-no-repeat bg-left flex items-center pl-6">Link Building Services</li>
                         </ul>
-        </section>
+        </motion.section>
         <section className="solvonix-about-block grid justify-center py-3 md:pb-[100px]">
         <div className="flex justify-center md:hidden py-5">
         <div className="about-work flex px-5 md:hidden md:p-4 text-center text-base md:text-3xl lg:text-5xl font-bold 
@@ -47,10 +57,17 @@ export default function WhoWeAre() {
     <div className="flex md:justify-center md:gap-6 md:col-span-3 items-center">
       <div className="about-work md:p-4 p-2 text-center text-base md:text-2xl lg:text-3xl">Efficiency</div>
       
-      <div className="about-work hidden md:flex md:p-4 text-center text-base md:text-3xl lg:text-5xl font-bold 
-        bg-[url('/images/about_diamond.png')] bg-no-repeat bg-cover size-[200px] lg:w-[498px] max-w-[500px] lg:h-[500px] items-center justify-center">
+      <motion.div className="about-work hidden md:flex md:p-4 text-center text-base md:text-3xl lg:text-5xl font-bold 
+        bg-[url('/images/about_diamond.png')] bg-no-repeat bg-cover size-[200px] lg:w-[498px] max-w-[500px] lg:h-[500px] items-center justify-center"
+       
+        initial={{ opacity:0, scale:0}}
+        whileInView={{ opacity:1, scale:1}}
+        transition={{ duration:0.8, ease:"easeInOut" }}
+        viewport={{ once:true }}
+        
+        >
         Solvonix
-      </div>
+      </motion.div>
 
       <div className="about-work p-2 md:p-4 text-center text-base md:text-2xl lg:text-3xl">Support</div>
     </div>
@@ -75,5 +92,8 @@ export default function WhoWeAre() {
 
        </div>
     </div>
+    
+    </>
+   
   )
 }

@@ -1,16 +1,35 @@
-import React, { useState } from 'react';
+import React, { useState ,useEffect} from 'react';
 import { Link,NavLink } from "react-router-dom";
 import { FaCaretDown, FaBars, FaTimes } from "react-icons/fa";
 import SubMenu from './SubMenu';
 
 export default function Navbar() {
+
+   const [bgColor, setBgColor] = useState("#01012B");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setBgColor("#000022F2"); // Change background + add shadow
+      } else {
+        setBgColor("#01012B");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+
+
+   
 const [toggle, setToggle] = useState(false);
 const [mobileMenu, setMobileMenu] = useState(false);
 const showSubMenu = () => {
 setToggle(!toggle);
 };
 return (
-<nav className="text-white shadow-lg sticky w-full top-0 z-[9999] bg-[#01012B]">
+<nav className={`text-white shadow-lg sticky duration-300 transition-all w-full top-0 z-[9999]`} style={{ backgroundColor:bgColor}}>
    <div className="container mx-auto flex justify-between items-center p-4">
       {/* Logo */}
       <div className="w-[200px]">

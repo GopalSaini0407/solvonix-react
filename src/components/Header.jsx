@@ -7,7 +7,6 @@ export default function Header() {
         <div className='max-w-[1200px] mx-auto'>
         <HeaderBottom/>
         </div>
-
     </header>
   )
 }

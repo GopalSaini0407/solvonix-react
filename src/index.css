@@ -228,9 +228,22 @@ color: #fff;
 .sub-component .service-section
 {
   display: grid;
+  grid-template-columns:1fr;
+  gap:20px
+}
+.web-design-box .service-section ,.brochure-designing-box 
+.service-section, .flyer-designing-box .service-section ,.facebook-application-box .service-section,
+.php-development-box .service-section,.cms-development-box .service-section ,.e-commerce-box .service-section
+
+
+
+{
+  display: grid;
   grid-template-columns:1fr 1fr;
   gap:20px
 }
+
+
 .sub-component .service-section .child-two:nth-child(3)
 {
   grid-column: span 2;

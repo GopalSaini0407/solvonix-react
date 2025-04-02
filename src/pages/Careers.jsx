@@ -1,6 +1,7 @@
 import React from 'react';
 import Accordion from '../components/Accordion';
 import Footer from '../components/Footer';
+import { Helmet } from "react-helmet-async";
 
 const weAre=[
   {icon:"images/hand.png", heading:"Pasionate & Committed", para:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mollis leo vel velit luctus, id feugiat magna euismod."},
@@ -13,7 +14,11 @@ const weAre=[
 
 export default function Careers() {
   return (
-    <div className='careers'>
+
+    <>
+
+
+<div className='careers'>
       <div className='max-w-[1200px] mx-auto'>
       <section className='value-info p-3 lg:pt-35'>
       <div class="value-info-title text-center lg:text-left">
@@ -57,5 +62,8 @@ export default function Careers() {
         <Footer/>
        </div>
     </div>
+    
+    </>
+   
   )
 }

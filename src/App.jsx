@@ -10,6 +10,7 @@ import WhoWeAre from './pages/WhoWeAre';
 import Careers from './pages/Careers';
 import Portfolio from './pages/Portfolio';
 import ReachUs from "./pages/ReachUs";
+import { HelmetProvider } from "react-helmet-async";
 
 // submenu
 import SubComponent from './components/SubComponent';
@@ -22,6 +23,7 @@ function App() {
 
   return (
     <>
+        <HelmetProvider>
   <Router>
   <Navbar/>
   <Header/>
@@ -61,6 +63,7 @@ function App() {
     {/* <HeaderBottom/> */}
 
   </Router>
+  </HelmetProvider>
     </>
   )
 }

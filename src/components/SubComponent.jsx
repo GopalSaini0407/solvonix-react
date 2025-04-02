@@ -9,6 +9,8 @@ import Slider from "react-slick";
 import ExpertiseCards from "./ExpertiseCards";
 import ServiceSection from "./ServiceSection";
 import WeDoSection from "./WeDoSection";
+import {motion} from "framer-motion"
+import { Helmet } from "react-helmet-async";
 
 const SubComponent = () => {
   var settings = {
@@ -25,10 +27,19 @@ const SubComponent = () => {
   if (!pageData) return <h2>Page Not Found</h2>;
   
   return (
-    <div className={`sub-component ${pageData.cls}`}>
+
+    <>
+      <div className={`sub-component ${pageData.cls}`}>
       <div className="parent-div max-w-[1200px] mx-auto px-5 my-10">
         {/* Title & Description */}
-      
+      <motion.div
+       initial={{ opacity:0, y:300}}
+       whileInView={{ opacity:1, y:0}}
+       transition={{ duration:0.5 }}
+       viewport={{ once:true }}
+      >
+
+     
       {
         pageData.title && <h2 className="font-extralight text-[#000022] md:text-6xl py-4">{pageData.title}</h2>
 
@@ -45,10 +56,17 @@ const SubComponent = () => {
             {para}
           </p>
         ))}
-
+ </motion.div>
         {/* Expertise Section */}
         <section className="child-one flex py-7 flex-col md:flex-row">
-          <div className="child-one-left flex-[0.3] md:px-10">
+          <motion.div className="child-one-left flex-[0.3] md:px-10"
+          
+          initial={{ opacity:0, y:300}}
+         whileInView={{ opacity:1, y:0}}
+         transition={{ duration:0.5 }}
+         viewport={{ once:true }}
+          
+          >
           {
             pageData.expertiseTitle && <h2 className="md:text-6xl text-[#000022] font-extralight mb-4">{pageData.expertiseTitle}</h2>
           }
@@ -57,7 +75,7 @@ const SubComponent = () => {
 
           }
             
-          </div>
+          </motion.div>
 
           <div className="child-one-right flex-[0.7] grid grid-cols-1">
 
@@ -89,6 +107,9 @@ const SubComponent = () => {
       <Footer />
       </div>
     </div>
+    </>
+
+   
   );
 };
 
