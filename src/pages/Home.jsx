@@ -5,6 +5,8 @@ import Footer from '../components/Footer';
 import {motion} from "framer-motion"
 import { Helmet } from "react-helmet-async";
 
+import SeoComponent from '../components/SeoComponent';
+
 export default function Home() {
 const ServiceData=[
 { img: 'images/offer_icon.png', title: 'Website Design and Development',para:"We develop web applications that appeal and reach to the end users delivering the desired result for our clients." },
@@ -50,6 +52,7 @@ const clientImges=[
 ]
 return (
    <>
+   <SeoComponent page="home"/>
 
 
 <div className="home-container">

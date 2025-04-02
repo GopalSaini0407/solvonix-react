@@ -3,7 +3,7 @@ import Footer from '../components/Footer';
 import { GrLocation } from "react-icons/gr";
 import { MdMarkEmailUnread } from "react-icons/md";
 import ReCAPTCHA from "react-google-recaptcha";
-import { Helmet } from "react-helmet-async";
+import SeoComponent from '../components/SeoComponent';
 export default function ReachUs() {
 
   const [captchaValue, setCaptchaValue] = useState(null);
@@ -20,6 +20,8 @@ export default function ReachUs() {
   return (
 
     <>
+       <SeoComponent page="reachUs"/>
+
 <div className='reach-us'>
       <div className='md:pb-80 bg-[#01012B]'></div>
       <div className='flex max-w-[1200px] mx-auto relative md:top-[-250px]'>

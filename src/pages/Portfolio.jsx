@@ -1,11 +1,12 @@
 import React from 'react';
 import PortfolioTabs from '../components/PortfolioTab';
-import { Helmet } from "react-helmet-async";
+import SeoComponent from '../components/SeoComponent';
 
 export default function Portfolio() {
   return (
 
     <>
+   <SeoComponent page="portfolio"/>
 
 <div className='portfolio'>
       <div className='pb-5'>

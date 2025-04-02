@@ -2,13 +2,13 @@ import React from 'react';
 import Counter from '../components/Counter';
 import Footer from '../components/Footer';
 import {motion} from "framer-motion"
-import { Helmet } from "react-helmet-async";
+import SeoComponent from '../components/SeoComponent';
 
 export default function WhoWeAre() {
   return (
 
     <>
-
+       <SeoComponent page="about"/>
 <div className='about h-100'>
       <div className='max-w-[1200px] mx-auto'>
         <motion.section className='about-solvonix p-3 lg:pt-65 lg:mx-25'
