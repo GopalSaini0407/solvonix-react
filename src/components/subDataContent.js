@@ -1066,6 +1066,189 @@ const subcontentData = {
                     }
                     ]
                     },
+
+                    "/guest-blogging": {
+                      cls: "guest-blogging-box",
+                      title: "Guest Blogging Services",
+                      subtitle: "It has been just more than a decade people started blogging on topics specific to their interests. Most of the earlier blogs were single-author blogs and were confined to an individual or at best a group of people sharing their thoughts and ideas on a single topic.",
+                      description: [
+                      " Don't see blogging just as your interest, it is the most powerful social marketing weapon in your online arsenal. ",
+                      "Business owners most of the time, due to various other engagements, cannot afford time for blogging. It equally becomes a costly affair for them to employ an entire team of professional blog writers, efficient editors, SEO experts, and someone to reach to other bloggers and maintain the pace of habitual blogging. For all of them, going for guest blogging services is the best option available.",
+                      "However, more recently in 2009, the trend of Multi-Author-Blogging (MAB) came into view, where large number of bloggers started sharing their views and thoughts on topics, commenting and re-commenting on others' posts. The trend has become so much popular that now it has emerged as a mainstream social media marketing strategy for companies of all sizes and at all levels and hence, there arouse d an enormous demand for guest blogging services.",
+                      "Solvonix, a progressive guest blogging company, is here to offer quality, proficient and affordable guest blogging services in India for all your existing and emerging blogging needs.",
+                      "Solvonix has been successfully providing guest blogging services in India and to some of its great clients from other parts of the globe.",
+                      "We would not provide you a comparison report with others or highlight a seductive price list",
+                      "Blogging is something what define us; it is something that we have been inherently into for quiet a good number of years.",
+                      "We have seen the impact of blogging in our own business and have tasted its long-term returns, and have been sharing a rich and satisfying success story with our esteemed clients through our guest blogging services.",
+                      ],
+                      expertiseTitle: "Our Expertise",
+                      expertiseText: "As a successful web design company in India, Solvonix has been providing its numerous clients with quality and affordable website.",
+                      expertiseCards: [
+                      { title: "Flyer Designing", image: "images/service_icon.png", bgColor: "#34B072" },
+                      { title: "Flash Designing", image: "images/service_icon.png", bgColor: "#7D73C5" },
+                      { title: "Logo Designing", image: "images/service_icon.png", bgColor: "#EE3E77" },
+                      { title: "CMS Designing", image: "images/service_icon.png", bgColor: "#34B072" },
+                      { title: "Website ReDesigning", image: "images/service_icon.png", bgColor: "#7D73C5" },
+                      { title: "Brochure Designing", image: "images/service_icon.png", bgColor: "#34B072" },
+                      { title: "Image Cutout", image: "images/service_icon.png", bgColor: "#7D73C5" },
+                      { title: "PSD to HTML", image: "images/service_icon.png", bgColor: "#7D73C5" },
+                      ],
+                      services: [
+                      {  title1:"Solvonix's Approach to Guest Blogging Services",
+                      listOne:["We do research on discovering blogs similar to your business domain, study them based on their potential, spread, link popularity, and quality of guest bloggers participating in the blog.",
+                      "Then we move on to establish a long-term relationship with the other guest bloggers (ideally the business owners or your prospective customers), so that your blog is easily accepted and finds a place in his blog.",
+                      "Our next venture is to developing quality, unique, powerful, targeted blog creation that undergoes a rigorous process of copyediting and SEO processes",
+                      "(Note that every aspect of keywords utilization, back-linking (to your website) options, and interactivity is taken care of very professionally.)",
+                      "Finally, the guest blogging service virtually ends with submission of your first blog.",
+                      ],
+                      }
+                      ],
+                      services2: [
+                      {  
+                      title1: "What to Expect with Solvonix Guest Blogging Services:",
+                      listOne:["Long-term Web Presence - Long brand retention",
+                      "Authoritativeness and Declaration of ownership in your industry",
+                      "Engage more numbers of readers and bloggers to your posts",
+                      "More likes, useful comments, and more RSS subscribers",
+                      "Build a strong network with important owners and authorities in your business",
+                      "Solid and Sustained online reputation and brand building"],
+                      }
+                      ],
+                      bottomText:"If you have been looking to deploy quality, affordable web design company in India, Solvonix assures that we will live up to your expectation. Working with us, you not only get professional and cheap web design service, but you can also outsource all your Internet Marketing related assignment to us.",
+                      weDoTitle: "We Do",
+                      weDoDescription: "Our clientele includes multinational corporations, small & medium enterprises, NGOs & development sector organizations.",
+                      weDoItems: [
+                      {
+                      title: "Design",
+                      image: "images/we_docurly.png",
+                      items: ["Web design", "Art design", "Logo & branding", "UI & UX"]
+                      },
+                      {
+                      title: "Web Development",
+                      image: "images/we_docurly.png",
+                      items: ["Front end & Back end", "Interaction design", "Magento,Wordpress", "Symfony,Laravel"]
+                      }
+                      ]
+                      },
+                      "/smo-services": {
+          cls: "smo-services-box",
+          title: "SMO Services",
+          subtitle: "With Solvonix social media optimization services, gaining the online reputation and popularity that is now much simplified. With our innovative and expert SMO professionals, you can attract huge inbound traffic from various sources other than search engines. We have enough experience and understanding of the numerous visitors active on different social media sites like, Facebook, twitter, YouTube, flickr, Digg, Kaboode, StumbleUpon, Reddit, Myspace, Friendster, Del.icio.us, HubPages, SQUIDOO etc.",
+          description: [
+          " Boost the traffic of your website with Facebook, twitter, YouTube, flickr, Digg, Kaboode, StumbleUpon, Reddit, Myspace, Friendster, Del.icio.us, HubPages, SQUIDOO .",
+          "Social Media Optimization has recently gained popularity in the world of Internet Marketing as the fastest emerging mode of attaining instant marketing communication and branding objectives. Solvonix is among few Social Media Optimization companies in India to master over the art and science of optimizing websites by quickly and seamlessly connecting them with various online communities and community websites.",
+          "As a boost to the overall online marketing initiative, our social media optimization strategies will enable you reach to maximum of your existing and prospective customers. Alongside, a continuous association through such social media promotion will help you in building a strong company image and brand identity."
+            ],
+          expertiseTitle: "Our Expertise",
+          expertiseText: "As a successful web design company in India, Solvonix has been providing its numerous clients with quality and affordable website.",
+          expertiseCards: [
+          { title: "Flyer Designing", image: "images/service_icon.png", bgColor: "#34B072" },
+          { title: "Flash Designing", image: "images/service_icon.png", bgColor: "#7D73C5" },
+          { title: "Logo Designing", image: "images/service_icon.png", bgColor: "#EE3E77" },
+          { title: "CMS Designing", image: "images/service_icon.png", bgColor: "#34B072" },
+          { title: "Website ReDesigning", image: "images/service_icon.png", bgColor: "#7D73C5" },
+          { title: "Brochure Designing", image: "images/service_icon.png", bgColor: "#34B072" },
+          { title: "Image Cutout", image: "images/service_icon.png", bgColor: "#7D73C5" },
+          { title: "PSD to HTML", image: "images/service_icon.png", bgColor: "#7D73C5" },
+          ],
+          services: [
+          { title1:"Advantages of Solvonix Social Media Advertising:",
+            description2:"With our special and customized social media marketing approach, you are sure to experience better results. Get your company promoted and see the change it brings in your overall business and profit sharing. With Solvonix, you can;",
+          listOne:["Create brand Awareness in different Social Networks .",
+          "Enhance Online Visibility of your website",
+          "Engage your Customer more Creatively",
+          "Improve Search Engine Ranking and Internet Traffic",
+          ],
+          description4:"Solvonix Technologies, your trusted social media optimization company, is committed to help you achieve that different taste of your acceptance among your customer.",
+          title2:"Solvonix Approaches towards Social Media Optimization Services:",
+          description5:"Known as a reputed Internet Marketing and social media optimization company in India, Solvonix adopts very justified and foolproof methodologies to give you that success in your online marketing effort. We do the following tried, tested, and trusted methods of social media optimization.",
+          subtitle2:"Forum Marketing: ",
+          description6:"The ultimate means to get connected and engaged with your targeted customers, Forum marketing drives in the most authentic and serious customers to your website. Experience the growth in the number of visitors with our Forum marketing services.",
+          subtitle3:" Blog Marketing: ",
+          description7:"Our avid and experienced bloggers know what exactly readers want to read, comment, and share over the Internet. We will blog for your products, services, and ideas in a way that ultimately that turns into a prospective sale.",
+          subtitle4:" Article Writing and Article Submissions: ",
+          description8:"We will create and post articles for you in all widely read and referred article posting sites, like the Ezine. Our expert content developers are experienced in putting your present the information suitable to promote your products and services.",
+          subtitle5:" Article Writing and Article Submissions: ",
+          description12:"Another vital means to manifest business initiatives, new and upgrade product releases, and announcements etc. We will develop press releases as per standards and circulate them in all reputed PR sites onine.",
+          }
+          ],
+         
+          weDoTitle: "We Do",
+          weDoDescription: "Our clientele includes multinational corporations, small & medium enterprises, NGOs & development sector organizations.",
+          weDoItems: [
+          {
+          title: "Design",
+          image: "images/we_docurly.png",
+          items: ["Web design", "Art design", "Logo & branding", "UI & UX"]
+          },
+          {
+          title: "Web Development",
+          image: "images/we_docurly.png",
+          items: ["Front end & Back end", "Interaction design", "Magento,Wordpress", "Symfony,Laravel"]
+          }
+          ]
+          },
+          "/website-redesigning": {
+      cls: "website-redesigning-box",
+      title: "Web Redesigning Services",
+      subtitle: "Solvonix is a fast progressing CMS designing company in India. With our years of experience working for various clients in business domains, expert CMS designers, we have been providing CMS website design services that perfectly work on World Wide Web.",
+      description: [
+      "Do I need to redesign my website? In order to avail website redesigning services, consider the following questions:",
+      ],
+      descriptionList:["Is your website up to date?",
+        "Is your website up to date?",
+        "Is the look and feel appealing?",
+        "Is the design compatible with search engines?",
+        "Does it illuminate a professional image?",
+        "And most worthy, is it generating leads/sales?",
+         ],
+      expertiseTitle: "Our Expertise",
+      expertiseText: "As a successful web design company in India, Solvonix has been providing its numerous clients with quality and affordable website.",
+      expertiseCards: [
+      { title: "Flyer Designing", image: "images/service_icon.png", bgColor: "#34B072" },
+      { title: "Flash Designing", image: "images/service_icon.png", bgColor: "#7D73C5" },
+      { title: "Logo Designing", image: "images/service_icon.png", bgColor: "#EE3E77" },
+      { title: "CMS Designing", image: "images/service_icon.png", bgColor: "#34B072" },
+      { title: "Website ReDesigning", image: "images/service_icon.png", bgColor: "#7D73C5" },
+      { title: "Brochure Designing", image: "images/service_icon.png", bgColor: "#34B072" },
+      { title: "Image Cutout", image: "images/service_icon.png", bgColor: "#7D73C5" },
+      { title: "PSD to HTML", image: "images/service_icon.png", bgColor: "#7D73C5" },
+      ],
+      services: [
+      {  title1:"Website redesigning methodology:",
+        description2:"We work with a motto to give your website a fresh, pleasing and professional look. And for this, our professional web designers and web content specialists make refurbishing work on following fronts: ",
+      listOne:["Updating website with latest web 2.0 design and technology",
+      "Making it search engine friendly",
+      "Making your website's navigation simple, easy, and smooth",
+      "Loading the website with standard layout, new graphics and images",
+      "Feeding the necessary content to the website",
+      ],
+      }
+      ],
+      services2: [
+        {  title1:"Why us for Website Redesigning",
+          description2:"Our Company will offer you one stop solution for all you website redesigning needs. We will not only conduct analysis on your Current structure but purpose you a complete solution. ",
+          description3:"With over professional website designer, developer and seo specialists we can deliver you best website Redesigning services. Which will be not only aesthetically good but equipped with all dynamic features like news online chat etc and above all the structure of Website will be build for getting high ranking in search engines.",
+
+        }
+        ],
+       
+      bottomText:"With growing demand of CMS based website and backend designing, a range of different CMS platforms have been introduced in due course of time. Our experienced CMS designers have immense expertise in developing websites in different platforms, such as Wordpress, Joomla, Zen Cart, Magento, PHP Scripting Language, DotNetNuke, Opencart, OsCommerce etc.",
+      weDoTitle: "We Do",
+      weDoDescription: "Our clientele includes multinational corporations, small & medium enterprises, NGOs & development sector organizations.",
+      weDoItems: [
+      {
+      title: "Design",
+      image: "images/we_docurly.png",
+      items: ["Web design", "Art design", "Logo & branding", "UI & UX"]
+      },
+      {
+      title: "Web Development",
+      image: "images/we_docurly.png",
+      items: ["Front end & Back end", "Interaction design", "Magento,Wordpress", "Symfony,Laravel"]
+      }
+      ]
+      },
   
 
   };

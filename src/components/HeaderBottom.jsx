@@ -172,7 +172,7 @@ export default function HeaderBottom() {
     {
       content.text && (
         <div className='flex flex-col items-center py-5 text-[#EE3E77]'>
-          <p>{content.text}</p>
+          <p className='pb-3'>{content.text}</p>
           <img src={content.downIcon} alt="img" loading="lazy" />
         </div>
 

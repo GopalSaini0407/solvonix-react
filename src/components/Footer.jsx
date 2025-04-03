@@ -8,7 +8,7 @@ const footerData = [
         content: [
             { name: "SEO Services", path: "/seo-services" },
             { name: "PPC", path: "/ppc-services" },
-            { name: "SMO", path: "/smo" },
+            { name: "SMO", path: "/smo-services" },
             { name: "Link Building", path: "/link-building" },
             { name: "Guest Blogging", path: "/guest-blogging" }
         ]
@@ -21,7 +21,7 @@ const footerData = [
             { name: "Facebook Application", path: "/facebook-application" },
             { name: "CMS Development", path: "/cms-development" },
             { name: "Ecommerce Development", path: "/e-commerce" },
-            { name: "Content writing", path: "/content-writing" }
+            { name: "Content writing", path: "/content-creation" }
         ]
     },
     { 
@@ -30,7 +30,7 @@ const footerData = [
         content: [
             { name: "Web Designing Services", path: "/web-design" },
             { name: "Logo Designing", path: "/logo-design" },
-            { name: "Website Redisigning", path: "/website-redisigning" },
+            { name: "Website Redisigning", path: "/website-redesigning" },
             { name: "Flash Designing", path: "/flash-designing" },
             { name: "Brochure Designing", path: "/brochure-designing" }
         ]
@@ -42,7 +42,7 @@ const footerData = [
             { name: "Reciprocal Link Building", path: "/reciprocal-link-building" },
             { name: "Bulk Link Building", path: "/bulk-link-building" },
             { name: "One Way Link Building", path: "/one-way-link-building" },
-            { name: "Link Building Package", path: "/link-building-package" },
+            { name: "Link Building Package", path: "/link-building" },
             { name: "Custom Link Building Package", path: "/custom-link-building-package" }
         ]
     }

@@ -50,6 +50,19 @@ function App() {
             <Route path="/cms-development" element={<SubComponent />} />
             <Route path="/e-commerce" element={<SubComponent />} />
             <Route path="/content-creation" element={<SubComponent />} />
+
+            <Route path="/guest-blogging" element={<SubComponent />} />
+            <Route path="/smo-services" element={<SubComponent />} />
+            <Route path="/content-writing" element={<SubComponent />} />
+            <Route path="/website-redesigning" element={<SubComponent />} />
+            <Route path="/flash-designing" element={<SubComponent />} />
+            <Route path="/brochure-designing" element={<SubComponent />} />
+            <Route path="/reciprocal-link-building" element={<SubComponent />} />
+            <Route path="/bulk-link-building" element={<SubComponent />} />
+            <Route path="/one-way-link-building" element={<SubComponent />} />
+            <Route path="/quality-link-building" element={<SubComponent />} />
+
+
           </Routes>
         </Suspense>
       </Router>

@@ -61,6 +61,13 @@ const SubComponent = () => {
             {para}
           </p>
         ))}
+          {
+            pageData.descriptionList && pageData.descriptionList.map((list,index)=>(
+              <ul key={index} className='about-whychoose text-[#A0A0A0] leading-9 text-sm lg:text-[15px]'>
+              <li className="bg-[url(/images/choose_listicon.jpg)] bg-no-repeat bg-left flex items-center pl-6">{list}</li>
+          </ul>
+            ))
+          }
  </motion.div>
         {/* Expertise Section */}
         <section className="child-one flex py-7 flex-col md:flex-row">

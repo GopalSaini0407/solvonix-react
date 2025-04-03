@@ -35,7 +35,7 @@ export default function PortfolioTabs() {
   return (
     <div className="shadow-lg rounded-lg bg-white">
       {/* Tabs Section with Slick Slider */}
-      <div className="border-b-2 border-gray-200 px-10 bg-[#01012B] py-4 pb-50 ">
+      <div className="border-b-2 border-gray-200 px-10 bg-[#01012B] py-4 pb-20 md:pb-50 ">
         <Slider {...sliderSettings}>
           {tabData.map((tab) => (
             <button
