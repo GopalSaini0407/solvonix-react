@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://67ed7689402d4ca403f9308b--magenta-biscotti-dbf989.netlify.app/sitemap.xml
+Sitemap: https://solvonix.netlify.app/sitemap.xml

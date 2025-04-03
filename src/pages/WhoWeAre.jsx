@@ -9,7 +9,7 @@ export default function WhoWeAre() {
 
     <>
        <SeoComponent page="about"/>
-<div className='about h-100'>
+       <div className='about'>
       <div className='max-w-[1200px] mx-auto'>
         <motion.section className='about-solvonix p-3 lg:pt-65 lg:mx-25'
           initial={{ opacity:0, y:200}}

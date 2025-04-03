@@ -73,10 +73,10 @@ export default function PortfolioContent() {
       </div>
     </div>
 
-    <div className="p-6 flex flex-col-reverse md:flex-row md:ms-20 bg-[#FCC81C] ">
+    <div className="p-6 flex flex-col-reverse md:flex-row md:ms-20 bg-[#031F51] text-white ">
       {/* Left Side Section */}
       <div className="w-full md:w-1/2">
-        <div className="text-right md:space-y-10 space-y-2 bg-[#FCC81C] flex flex-col justify-start md:justify-center items-center md:items-end md:h-100">
+        <div className="text-right md:space-y-10 space-y-2 bg-[##031F51] flex flex-col justify-start md:justify-center items-center md:items-end md:h-100">
           <h2 className="md:text-2xl text-base font-semibold border-b-2 border-[#F58D31]">
             Delhi Collage of Art
           </h2>

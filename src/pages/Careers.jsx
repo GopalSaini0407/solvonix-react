@@ -57,7 +57,6 @@ export default function Careers() {
                 </div>
             <Accordion/>
       </section>
-   
       </div>
        <div className="career-footer relative  z-0 md:z-10 md:top-[0px]">
         <Footer/>

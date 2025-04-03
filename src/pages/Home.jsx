@@ -245,7 +245,7 @@ return (
          </div>
          <motion.div className='client-right-box flex-1 columns-3  lg:ps-[120px] pt-10 md:pt-0'
          
-         initial={{ opacity:0, x:100}}
+         initial={{ opacity:0, x:50}}
            whileInView={{ opacity:1, x:0}}
            transition={{ duration:0.8 }}
            viewport={{ once:true }}

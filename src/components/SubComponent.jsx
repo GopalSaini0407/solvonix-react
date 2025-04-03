@@ -38,9 +38,9 @@ const SubComponent = () => {
       <div className="parent-div max-w-[1200px] mx-auto px-5 my-10">
         {/* Title & Description */}
       <motion.div
-       initial={{ opacity:0, y:300}}
+       initial={{ opacity:0, y:100}}
        whileInView={{ opacity:1, y:0}}
-       transition={{ duration:0.5 }}
+       transition={{ duration:0.8}}
        viewport={{ once:true }}
       >
 
@@ -66,9 +66,9 @@ const SubComponent = () => {
         <section className="child-one flex py-7 flex-col md:flex-row">
           <motion.div className="child-one-left flex-[0.3] md:px-10"
           
-          initial={{ opacity:0, y:300}}
+          initial={{ opacity:0, y:100}}
          whileInView={{ opacity:1, y:0}}
-         transition={{ duration:0.5 }}
+         transition={{ duration:0.8}}
          viewport={{ once:true }}
           
           >

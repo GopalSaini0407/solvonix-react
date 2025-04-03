@@ -22,12 +22,12 @@ export default function PortfolioTabs() {
   const sliderSettings = {
     infinite: false,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 7,
     slidesToScroll: 1,
     arrows: true,
     responsive: [
-      { breakpoint: 1024, settings: { slidesToShow: 3 } },
-      { breakpoint: 768, settings: { slidesToShow: 2 } },
+      { breakpoint: 1024, settings: { slidesToShow: 5 } },
+      { breakpoint: 768, settings: { slidesToShow: 3 } },
       { breakpoint: 480, settings: { slidesToShow: 1 } },
     ],
   };
@@ -41,7 +41,7 @@ export default function PortfolioTabs() {
             <button
               key={tab.id}
               className={`py-2 px-4 text-sm font-medium transition-all duration-300 whitespace-nowrap 
-                ${activeTab === tab.id ? "text-blue-600 border-b-2 border-blue-600" : "text-gray-500 hover:text-blue-500"}`}
+                ${activeTab === tab.id ? "text-[#ED3E75] bg-white border-b-2 border-[#ED3E75]" : "text-white hover:text-[#ED3E75]"}`}
               onClick={() => setActiveTab(tab.id)}
             >
               {tab.name}
