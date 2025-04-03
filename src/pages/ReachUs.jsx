@@ -85,7 +85,7 @@ export default function ReachUs() {
          />
         </div>
             <ReCAPTCHA
-        sitekey="6Lf-LAcrAAAAAHeKy17I9XLg7jsLShRovKqCfD47"  // Google se milega
+        sitekey="6LfWpggrAAAAACk3PyuPcFDsQOVHrxkt1ZTehV9R"  // Google se milega
         onChange={(value) => setCaptchaValue(value)}
       />
           <button type="submit" className='px-3 py-3 rounded bg-[#EE3E77] text-white font-light w-full text-center mt-5 hover:bg-black text-2xl'>Send</button>

@@ -81,7 +81,8 @@ return (
          whileInView={{ opacity:1, x:0}}
          transition={{ duration:0.8 }}
          viewport={{ once:true }}>
-         <img src='images/who_we.png' alt='Who We Are' className='w-full' />
+         <img src='images/who_we.png' alt='Who We Are' className='w-full' loading="lazy"
+ />
          </motion.div>
       </div>
       {/* Counter Section */}
@@ -92,13 +93,14 @@ return (
          <h4 className='text-[#000022] font-extralight text-3xl lg:text-[54px]'>What We Offer</h4>
          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-9 md:mt-[60px]'>
             {ServiceData.map((service, index) => (
-            <div key={index} className='home-services-content grid justify-center md:px-9 relative group'>
+            <div key={index} className='home-services-content grid justify-center md:px-9 relative group mx-3'>
                <span className="absolute left-1/2 top-5 w-0 h-[2px] bg-white transform -translate-x-1/2 group-hover:w-[95%] transition-all duration-500 ease-in-out"></span>
                <span className='absolute right-5 top-1/2 w-[2px] h-[0%] bg-white transform -translate-y-1/2 group-hover:h-[95%] transition-all duration-500 ease-in-out'></span>
                <span className='absolute left-1/2 bottom-5 w-[0%] h-[2px] bg-white transform -translate-x-1/2 group-hover:w-[95%] transition-all duration-500 ease-in-out'></span>
                <span className='absolute left-5 top-1/2 w-[2px] h-[0%] bg-white transform -translate-y-1/2 group-hover:h-[95%] transition-all duration-500 ease-in-out'></span>
                <div className='service-img-box flex justify-center'>
-                  <img src={service.img} alt={service.title} />
+                  <img src={service.img} alt={service.title} loading="lazy"
+ />
                </div>
                <h3 className='text-[#323232] text-2xl lg:text-xl mt-[20px] font-semibold text-center pb-7'>
                   {service.title}
@@ -129,11 +131,11 @@ return (
                   <h1 className='text-[2rem]  font-bold'>What Solvonix done?</h1>
                </motion.div>
                <div className="solvonix-work-box size-[175px] items-center justify-center flex flex-col border duration-500 border-dashed border-[#EE3E77] p-4 rounded-full text-center hover:text-white hover:bg-[#EE3E77]">
-                  <img src="images/education.png" alt="img"/>
+                  <img src="images/education.png" alt="img" loading="lazy"/>
                   <h3 className='mt-[20px]'>Education</h3>
                </div>
                <div className="solvonix-work-box size-[175px] items-center justify-center flex flex-col border duration-500 border-dashed border-[#EE3E77] p-4 rounded-full text-center hover:text-white hover:bg-[#EE3E77]">
-                  <img src="images/hospitality.png" alt="img"/>
+                  <img src="images/hospitality.png" alt="img" loading="lazy"/>
                   <h3 className='mt-[20px]'>Hospitality</h3>
                </div>
             </motion.div>
@@ -144,7 +146,7 @@ return (
               viewport={{ once: true, amount: 0.2 }}
             >
                <div className="solvonix-work-box size-[175px] mt-[36px] md:mt-0 items-center justify-center flex flex-col border duration-500 border-dashed border-[#EE3E77] p-4 rounded-full text-center hover:text-white hover:bg-[#EE3E77]">
-                  <img src="images/hotels.png" alt="img"/>
+                  <img src="images/hotels.png" alt="img" loading="lazy"/>
                   <h3 className='mt-[20px]'>Hotels</h3>
                </div>
                <motion.div className="solvonix-work-box size-[175px] items-center justify-center md:flex flex-col hidden  text-[#EE3E77] border-[#EE3E77] p-4 rounded-full text-center"
@@ -156,7 +158,7 @@ return (
                   <h1 className='text-[2rem]  font-bold'>What Solvonix done?</h1>
                </motion.div>
                <div className="solvonix-work-box size-[175px] items-center justify-center flex flex-col border duration-500 border-dashed border-[#EE3E77] p-4 rounded-full text-center hover:text-white hover:bg-[#EE3E77]">
-                  <img src="images/gaming.png" alt="img"/>
+                  <img src="images/gaming.png" alt="img" loading="lazy"/>
                   <h3 className='mt-[20px]'>iGamin</h3>
                </div>
             </motion.div>
@@ -166,11 +168,11 @@ return (
               transition={{ duration: 0.8, ease: "easeOut" }} 
               viewport={{ once: true, amount: 0.2 }}>
                <div className="solvonix-work-box size-[175px] mt-[36px] md:mt-0 items-center justify-center flex flex-col border duration-500 border-dashed border-[#EE3E77] p-4 rounded-full text-center hover:text-white hover:bg-[#EE3E77]">
-                  <img src="images/healthcare.png" alt="img"/>
+                  <img src="images/healthcare.png" alt="img" loading="lazy"/>
                   <h3 className='mt-[20px]'>Healthcare</h3>
                </div>
                <div className="solvonix-work-box size-[175px] items-center justify-center flex flex-col border duration-500 border-dashed border-[#EE3E77] p-4 rounded-full text-center hover:text-white hover:bg-[#EE3E77]">
-                  <img src="images/real_estate.png" alt="img"/>
+                  <img src="images/real_estate.png" alt="img" loading="lazy"/>
                   <h3 className='mt-[20px]'>Education</h3>
                </div>
             </motion.div>
@@ -213,7 +215,7 @@ return (
            whileInView={{ opacity:1, x:0}}
            transition={{ duration:0.8 }}
            viewport={{ once:true }}>
-            <img src="images/choose_img.png" alt="img" />
+            <img src="images/choose_img.png" alt="img"  loading="lazy"/>
          </motion.div>
       </section>
       {/* choose-plains Section */}
@@ -225,7 +227,7 @@ return (
       >
          {
          choosePlanData.map((plan, index) => (
-         <div key={index} className="plans-box text-center sm:text-left border-t-3 border-t-[#EA3E70] md:p-5 p-0 relative font-bold hover:text-[white]
+         <div key={index} className="plans-box text-center sm:text-left border-t-3 border-t-[#EA3E70] p-5 relative font-bold hover:text-[white]
             before:absolute before:top-0 before:left-0 before:w-full before:h-0 
             before:bg-[#EA3E70] before:transition-all before:duration-700 hover:before:h-full 
             before:mix-blend-multiply">
@@ -247,25 +249,28 @@ return (
          
          initial={{ opacity:0, x:50}}
            whileInView={{ opacity:1, x:0}}
-           transition={{ duration:0.8 }}
+           transition={{ duration:0.8 }}  
            viewport={{ once:true }}
          >
             {
             clientImges.map((clientImg,index)=>(
             <div className="clinet-img-box" key={index}>
-               <img src={clientImg.img} alt="img"/>
+               <img src={clientImg.img} alt="img" loading="lazy"/>
             </div>
             ))
             }
          </motion.div>
          <motion.div className="client-middle-box hidden lg:block absolute left-1/3 top-1/3 "
          
-         initial={{ opacity:0, y:-100}}
-         whileInView={{ opacity:1, y:0}}
-         transition={{ duration:0.8 }}
-         viewport={{ once:true }}>
+         animate={{ y: ["0%", "-20%", "0%"] }} // Up and Down
+      transition={{
+        duration: 2, 
+        repeat: Infinity, 
+        ease: "easeInOut"
+      }}
+         >
             <div className='bg-[#EE3E77;] w-[205px] h-[205px] relative rounded-[50%]'>
-               <img src="images/clients_man.png" className='relative left-[33px] top-[-42px]' alt="img"/>
+               <img src="images/clients_man.png" className='relative left-[33px] top-[-42px]' alt="img" loading="lazy"/>
             </div>
          </motion.div>
       </section>

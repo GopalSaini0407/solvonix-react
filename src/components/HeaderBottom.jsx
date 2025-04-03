@@ -150,7 +150,7 @@ export default function HeaderBottom() {
   
             >
             <div onClick={()=> <Link to="/about">ram</Link>} className='bg-white rounded-[50%] flex size-[50px] sm:size-[65px] justify-center items-center'>
-            <img src={content.arrorIcon} alt="img" />    
+            <img src={content.arrorIcon} alt="img" loading="lazy" />    
             </div>
             </motion.div>
            
@@ -161,7 +161,7 @@ export default function HeaderBottom() {
           content.aboutImg && (
             <div className='lg:py-20 lg:relative'>
               <div className="header-about-img pt-2 lg:pb-60">
-              <img src={content.aboutImg} className='lg:absolute' alt="img" />
+              <img src={content.aboutImg} className='lg:absolute' alt="img" loading="lazy" />
             </div>
             </div>
 
@@ -173,7 +173,7 @@ export default function HeaderBottom() {
       content.text && (
         <div className='flex flex-col items-center py-5 text-[#EE3E77]'>
           <p>{content.text}</p>
-          <img src={content.downIcon} alt="img" />
+          <img src={content.downIcon} alt="img" loading="lazy" />
         </div>
 
       )
@@ -189,7 +189,7 @@ export default function HeaderBottom() {
                transition={{ duration:0.5 }}
                viewport={{ once:true }}
               >
-                <img src={content.careerImg.careerImg1} className='object-cover size-full' alt="img" />
+                <img src={content.careerImg.careerImg1} className='object-cover size-full' alt="img"  loading="lazy"/>
                 </motion.div>
               <motion.div className="careerImg md:row-span-2 "
                initial={{ opacity:0, y:-300}}
@@ -197,28 +197,28 @@ export default function HeaderBottom() {
                transition={{ duration:0.5 }}
                viewport={{ once:true }}
               >
-                <img src={content.careerImg.careerImg2} className='object-cover size-full' alt="img" />
+                <img src={content.careerImg.careerImg2} className='object-cover size-full' alt="img" loading="lazy"/>
                 </motion.div>
               <motion.div className="careerImg"
                initial={{ opacity:0, y:100}}
                whileInView={{ opacity:1, y:0}}
                transition={{ duration:0.5 }}
                viewport={{ once:true }}>
-                <img src={content.careerImg.careerImg3} className='object-cover size-full' alt="img" />
+                <img src={content.careerImg.careerImg3} className='object-cover size-full' alt="img" loading="lazy"/>
                 </motion.div>
               <motion.div className="careerImg"
                initial={{ opacity:0, x:300}}
                whileInView={{ opacity:1, x:0}}
                transition={{ duration:0.5 }}
                viewport={{ once:true }}>
-                <img src={content.careerImg.careerImg4} className='object-cover size-full' alt="img" />
+                <img src={content.careerImg.careerImg4} className='object-cover size-full' alt="img" loading="lazy"/>
                 </motion.div>
               <motion.div className="careerImg md:row-span-2"
                initial={{ opacity:0, x:300}}
                whileInView={{ opacity:1, x:0}}
                transition={{ duration:0.5 }}
                viewport={{ once:true }}>
-                <img src={content.careerImg.careerImg5} className='object-cover size-full' alt="img" />
+                <img src={content.careerImg.careerImg5} className='object-cover size-full' alt="img" loading="lazy"/>
                 </motion.div>
                 </div>
               </div>

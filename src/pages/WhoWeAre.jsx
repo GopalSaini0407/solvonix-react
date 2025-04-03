@@ -37,10 +37,15 @@ export default function WhoWeAre() {
         </motion.section>
         <section className="solvonix-about-block grid justify-center py-3 md:pb-[100px]">
         <div className="flex justify-center md:hidden py-5">
-        <div className="about-work flex px-5 md:hidden md:p-4 text-center text-base md:text-3xl lg:text-5xl font-bold 
-        bg-[url('/images/about_diamond.png')] bg-no-repeat bg-cover w-[300px] max-w-[500px] h-[300px] items-center justify-center">
+        <motion.div className="about-work flex px-5 md:hidden md:p-4 text-center text-base md:text-3xl lg:text-5xl font-bold 
+        bg-[url('/images/about_diamond.png')] bg-no-repeat bg-cover w-[300px] max-w-[500px] h-[300px] items-center justify-center"
+        initial={{ opacity:0, scale:0}}
+        whileInView={{ opacity:1, scale:1}}
+        transition={{ duration:0.8, ease:"easeInOut" }}
+        viewport={{ once:true }}
+        >
         Solvonix
-      </div>
+      </motion.div>
         </div>
       
         <div className="md:grid md:grid-cols-3 flex  md:gap-6 text-[#EE3E77] lg:relative flex-wrap">

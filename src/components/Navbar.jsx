@@ -2,6 +2,7 @@ import React, { useState ,useEffect} from 'react';
 import { Link,NavLink } from "react-router-dom";
 import { FaCaretDown, FaBars, FaTimes } from "react-icons/fa";
 import SubMenu from './SubMenu';
+import {motion} from "framer-motion"
 
 export default function Navbar() {
 
@@ -32,11 +33,17 @@ return (
 <nav className={`text-white shadow-lg sticky duration-300 transition-all w-full top-0 z-[9999]`} style={{ backgroundColor:bgColor}}>
    <div className="container mx-auto flex justify-between items-center p-4">
       {/* Logo */}
-      <div className="w-[200px]">
+      <motion.div className="w-[200px]"
+      
+         initial={{ opacity:0, scale:0}}
+         whileInView={{ opacity:1, scale:1}}
+         transition={{ duration:0.8 }}
+         viewport={{ once:true }}
+      >
          <Link to="/">
          <img src="images/logo.png" alt="logo" className="w-full" />
          </Link>
-      </div>
+      </motion.div>
       {/* Desktop Menu */}
       <ul className="hidden navabr md:flex items-center space-x-6 relative sm:text-sm lg:text-base">
          <li className='relative'>

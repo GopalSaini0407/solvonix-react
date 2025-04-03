@@ -35,7 +35,7 @@ export default function PortfolioContent() {
 
       {/* Right Side Section with Image */}
       <div className="w-full md:w-1/2 flex justify-center">
-        <img alt="Design" className="w-full rounded-lg" src="images/dca.png" />
+        <img alt="Design" className="w-full rounded-lg" src="images/dca.png" loading="lazy" />
       </div>
     </div>
 
@@ -69,7 +69,7 @@ export default function PortfolioContent() {
 
       {/* Right Side Section with Image */}
       <div className="w-full md:w-1/2 flex justify-center ">
-        <img alt="Design" className="w-full rounded-lg" src="images/portfolio_img.png" />
+        <img alt="Design" className="w-full rounded-lg" src="images/portfolio_img.png"  loading="lazy"/>
       </div>
     </div>
 
@@ -103,7 +103,7 @@ export default function PortfolioContent() {
 
       {/* Right Side Section with Image */}
       <div className="w-full md:w-1/2 flex justify-center">
-        <img alt="Design" className="w-full rounded-lg" src="images/multi_flat.png" />
+        <img alt="Design" className="w-full rounded-lg" src="images/multi_flat.png" loading="lazy" />
       </div>
     </div>
   </div>

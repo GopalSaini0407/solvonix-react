@@ -33,7 +33,7 @@ export default function Careers() {
               weAre.map((data,index)=>(
                 <div className='we-are-box flex px-5 flex-col md:flex-row justify-center items-center md:justify-start' key={index}>
             <div className="icons md:size-[100px] size-[66px] me-3">
-              <img src={data.icon} className='w-full' alt="img" />
+              <img src={data.icon} className='w-full' alt="img" loading="lazy" />
             </div>
             <div>
             <h3 className='font-medium text-center md:text-left'>{data.heading}</h3> 
