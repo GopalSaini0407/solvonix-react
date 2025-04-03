@@ -5,19 +5,10 @@
 @import "tailwindcss";
 
 
-/* .about-whychoose ul li::after {
-  background: url(../images/choose_listicon.jpg) left top no-repeat;
-  position: absolute;
-  left: 5px;
-  top: 14px;
-  content: "";
-  width: 9px;
-  height: 9px;
-} */
-
-
-
-
+header.home
+{
+  min-height:100vh;
+}
 
 
 /* navbar */
@@ -294,6 +285,12 @@ color: #fff;
       width: 50px;
       height: 50px;
   }
+
+  header.home
+  {
+    min-height:100%;
+  }
+  
 }
 
 
