@@ -35,7 +35,7 @@ export default function WhoWeAre() {
                             <li className="bg-[url(/images/choose_listicon.jpg)] bg-no-repeat bg-left flex items-center pl-6">Link Building Services</li>
                         </ul>
         </motion.section>
-        <section className="solvonix-about-block grid justify-center py-3 md:pb-[100px]">
+        <section className="solvonix-about-block grid justify-center pt-3">
         <div className="flex justify-center md:hidden py-5">
         <motion.div className="about-work flex px-5 md:hidden md:p-4 text-center text-base md:text-3xl lg:text-5xl font-bold 
         bg-[url('/images/about_diamond.png')] bg-no-repeat bg-cover w-[300px] max-w-[500px] h-[300px] items-center justify-center"
@@ -85,14 +85,16 @@ export default function WhoWeAre() {
       </div>
     </div>
   </div>
-  <p className='text-[#A0A0A0] text-sm lg:text-[17px] font-light leading-6 lg:mx-25 lg:my-10 px-3'>Winning solutions requires the domain expertise of techno-professional from various disciplines. The core team at Solvonix technologies comprises of technical, designs, marketing specialists as well as advisory consultants who help us in evolving web and digital solution strategies. Our partners have to access to highly qualified  professionals at all times but pay only for the expertise they need.</p>
+  <p className='text-[#A0A0A0] text-sm lg:text-[17px] font-light leading-6 lg:mx-25 lg:mt-10 px-3'>Winning solutions requires the domain expertise of techno-professional from various disciplines. The core team at Solvonix technologies comprises of technical, designs, marketing specialists as well as advisory consultants who help us in evolving web and digital solution strategies. Our partners have to access to highly qualified  professionals at all times but pay only for the expertise they need.</p>
 
        </section>
       </div>
-      <section className='about-bottom-box bg-[#EE3E77;] md:pb-30 relative z-10 md:z-0'>
+      <section className='md:relative md:h-100 mt-10'>
+      <div className='about-bottom-box bg-[#EE3E77] md:absolute md:top-20 pt-20 left-0 md:pb-30 z-10 md:z-0 w-[100%]'>
       <Counter borderColor="white"/>
+      </div>
        </section>
-       <div className="footer relative  z-0 md:z-10 md:top-[-155px]">
+       <div className="footer relative  z-0 md:z-10 md:top-[0px]">
        <Footer/>
 
        </div>

@@ -9,7 +9,7 @@ export default function Portfolio() {
    <SeoComponent page="portfolio"/>
 
 <div className='portfolio'>
-      <div className='pb-5'>
+      <div className=''>
       <PortfolioTabs/>
       </div>
     </div>
