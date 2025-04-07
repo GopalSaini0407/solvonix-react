@@ -65,7 +65,7 @@ export default function PortfolioTabs() {
       <p className="text-base md:text-2xl">Whatever be your web designing need, <br /> call us at +918826822211 or write to us at info@solvonix.com</p>
       <button className="px-3 py-2 md:px-4 md:py-3 rounded bg-white text-[#ED3E75] mt-3">Work With Us</button>
     </section>
-    <div class="footer relative top-[0px] z-0 md:z-10 md:top-[0px]">
+    <div className="footer relative top-[0px] z-0 md:z-10 md:top-[0px]">
     <Footer/>
     </div>
     </div>

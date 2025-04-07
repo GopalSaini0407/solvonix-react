@@ -8,7 +8,12 @@ export default function WhoWeAre() {
   return (
 
     <>
-       <SeoComponent page="about"/>
+       <SeoComponent page="about"
+         title="Solvonix Technologies"
+         description="Solvonix Technologies a well known SEO Company of India providing SEO services. Wanna reasonable SEO services in India? Professional SEO Company in India to help you. Call us for SEO services, PPC services, Link Building services and SMO services in India."
+         keywords="SEO India , SEO Company India , ROI Based SEO Services India&lrm , SEO Services In India, Best SEO company, SEO company in India"
+      
+       />
        <div className='about'>
       <div className='max-w-[1200px] mx-auto'>
         <motion.section className='about-solvonix p-3 lg:pt-65 lg:mx-25'

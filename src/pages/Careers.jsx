@@ -22,7 +22,7 @@ export default function Careers() {
 <div className='careers'>
       <div className='max-w-[1200px] mx-auto'>
       <section className='value-info p-3 lg:pt-35'>
-      <div class="value-info-title text-center lg:text-left">
+      <div className="value-info-title text-center lg:text-left">
                     <h5 className='text-[#EA3E70] lg:text-1xl'>Our Value</h5>
                     <h2 className='text-[#000022] lg:text-5xl  font-light lg:my-4'>Why work with us</h2>
                 </div>

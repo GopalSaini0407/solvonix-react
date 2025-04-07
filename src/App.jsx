@@ -56,11 +56,10 @@ function App() {
             <Route path="/content-writing" element={<SubComponent />} />
             <Route path="/website-redesigning" element={<SubComponent />} />
             <Route path="/flash-designing" element={<SubComponent />} />
-            <Route path="/brochure-designing" element={<SubComponent />} />
             <Route path="/reciprocal-link-building" element={<SubComponent />} />
             <Route path="/bulk-link-building" element={<SubComponent />} />
             <Route path="/one-way-link-building" element={<SubComponent />} />
-            <Route path="/quality-link-building" element={<SubComponent />} />
+            <Route path="/custom-link-building-package" element={<SubComponent />} />
 
 
           </Routes>

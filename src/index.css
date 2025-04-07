@@ -1,7 +1,6 @@
 /* Import Slick CSS */
 @import 'slick-carousel/slick/slick.css';
 @import 'slick-carousel/slick/slick-theme.css';
-
 @import "tailwindcss";
 
 
@@ -235,9 +234,8 @@ color: #fff;
 }
 .web-design-box .service-section ,.brochure-designing-box 
 .service-section, .flyer-designing-box .service-section ,.facebook-application-box .service-section,
-.php-development-box .service-section,.cms-development-box .service-section ,.e-commerce-box .service-section
-
-
+.php-development-box .service-section,.cms-development-box .service-section ,.e-commerce-box .service-section,
+.guest-blogging-box .service-section,.website-redesigning-box .service-section,.flash-designing-box .service-section
 
 {
   display: grid;
@@ -268,6 +266,7 @@ color: #fff;
 {
   grid-column: span 2;
 }
+
 
 @media (max-width: 640px) {
   .counter-section .counter-box:nth-child(2n) {
@@ -303,8 +302,6 @@ color: #fff;
   }
   
 }
-
-
 
 @media (max-width: 1023px) {
 

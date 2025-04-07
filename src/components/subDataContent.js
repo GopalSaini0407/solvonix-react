@@ -1227,8 +1227,8 @@ const subcontentData = {
       ],
       services2: [
         {  title1:"Why us for Website Redesigning",
-          description2:"Our Company will offer you one stop solution for all you website redesigning needs. We will not only conduct analysis on your Current structure but purpose you a complete solution. ",
-          description3:"With over professional website designer, developer and seo specialists we can deliver you best website Redesigning services. Which will be not only aesthetically good but equipped with all dynamic features like news online chat etc and above all the structure of Website will be build for getting high ranking in search engines.",
+          description1:"Our Company will offer you one stop solution for all you website redesigning needs. We will not only conduct analysis on your Current structure but purpose you a complete solution. ",
+          description2:"With over professional website designer, developer and seo specialists we can deliver you best website Redesigning services. Which will be not only aesthetically good but equipped with all dynamic features like news online chat etc and above all the structure of Website will be build for getting high ranking in search engines.",
 
         }
         ],
@@ -1249,6 +1249,263 @@ const subcontentData = {
       }
       ]
       },
+      "/flash-designing": {
+        cls: "flash-designing-box",
+        title: "Let your website literally speak to your audiences!",
+        subtitle: "Yes, with the innate beauty of Flash website designing, you can put life into static websites. Many occasions, volumes of overly description do not work and you are not able to capture your target audience at the very first instance.",
+        description: [
+        "Flash designing has this capability to instantly build a permanent shelter in the minds of your customers.",
+        "Solvonix, with its years of experience in flash website development can help you get that much needed fraction of permanent attention in this vast online space. ",
+        ],
+        descriptionList:["Is your website up to date?",
+          "Is your website up to date?",
+          "Is the look and feel appealing?",
+          "Is the design compatible with search engines?",
+          "Does it illuminate a professional image?",
+          "And most worthy, is it generating leads/sales?",
+           ],
+        expertiseTitle: "Our Expertise",
+        expertiseText: "As a successful web design company in India, Solvonix has been providing its numerous clients with quality and affordable website.",
+        expertiseCards: [
+        { title: "Flyer Designing", image: "images/service_icon.png", bgColor: "#34B072" },
+        { title: "Flash Designing", image: "images/service_icon.png", bgColor: "#7D73C5" },
+        { title: "Logo Designing", image: "images/service_icon.png", bgColor: "#EE3E77" },
+        { title: "CMS Designing", image: "images/service_icon.png", bgColor: "#34B072" },
+        { title: "Website ReDesigning", image: "images/service_icon.png", bgColor: "#7D73C5" },
+        { title: "Brochure Designing", image: "images/service_icon.png", bgColor: "#34B072" },
+        { title: "Image Cutout", image: "images/service_icon.png", bgColor: "#7D73C5" },
+        { title: "PSD to HTML", image: "images/service_icon.png", bgColor: "#7D73C5" },
+        ],
+        services: [
+        {  title1:"We design flash websites and solutions that perfectly work in the Internet arena.",
+        listOne:["Service of the most trusted flash website development company in India",
+        "Experienced Flash developers who can bring life to your existing website",
+        "Get unique and innovative Flash logo developed for your company",
+        "Result until your satisfaction",
+        "Feeding the necessary content to the website",
+        ],
+        }
+        ],
+        services2: [
+          {  title1:"Apart from developing complete flash websites, Solvonix also works on developing the following:",
+            listTwo:["Corporate presentations",
+              "Banner advertisements",
+              "Electronic Business Cards",
+              "Various Flash Components, such as Animations, Greeting Cards, and Navigation etc.",
+              ],
+          }
+          ],
+         
+        bottomText:"Be it your corporate website, personal website, flash animated logo design, we can help you develop it in the most attractive and acceptable manner with enhanced perceived value towards your business in totality. Our flash website development services work well to explain complex business-critical ideas and concepts in the simplest manner.",
+        weDoTitle: "We Do",
+        weDoDescription: "Our clientele includes multinational corporations, small & medium enterprises, NGOs & development sector organizations.",
+        weDoItems: [
+        {
+        title: "Design",
+        image: "images/we_docurly.png",
+        items: ["Web design", "Art design", "Logo & branding", "UI & UX"]
+        },
+        {
+        title: "Web Development",
+        image: "images/we_docurly.png",
+        items: ["Front end & Back end", "Interaction design", "Magento,Wordpress", "Symfony,Laravel"]
+        }
+        ]
+        },
+        "/reciprocal-link-building": {
+          cls: "reciprocal-link-building-box",
+          title: "An impeccable way for online brand promotion",
+          subtitle: "Importance of the link building cannot be understated because it is extremely important deliver the best results to the users. Availability of Reciprocal link building services would allow the customers to build and evolve different strategies of online marketing in an impeccable manner.",
+          description: [
+          "There are different search optimization companies claiming to provide the best services to the consumers however the output leaves much to be desired. We ensure that the links are directed from the website considered to be markedly superior in terms of web rankings compared to other sites in the market.",
+          "Our entire gamut of search engine professional works in tandem with the client to access bunches of keywords related to a particular business domain. We have a proven and rigorously tested record of providing the best to the customers by using the amazing attributes of anchor text and deploying the keywords to attract the web traffic.",
+          ],
+          expertiseTitle: "Our Expertise",
+          expertiseText: "As a successful web design company in India, Solvonix has been providing its numerous clients with quality and affordable website.",
+          expertiseCards: [
+          { title: "Flyer Designing", image: "images/service_icon.png", bgColor: "#34B072" },
+          { title: "Flash Designing", image: "images/service_icon.png", bgColor: "#7D73C5" },
+          { title: "Logo Designing", image: "images/service_icon.png", bgColor: "#EE3E77" },
+          { title: "CMS Designing", image: "images/service_icon.png", bgColor: "#34B072" },
+          { title: "Website ReDesigning", image: "images/service_icon.png", bgColor: "#7D73C5" },
+          { title: "Brochure Designing", image: "images/service_icon.png", bgColor: "#34B072" },
+          { title: "Image Cutout", image: "images/service_icon.png", bgColor: "#7D73C5" },
+          { title: "PSD to HTML", image: "images/service_icon.png", bgColor: "#7D73C5" },
+          ],
+          services: [
+          { 
+          title1:"Various tips and techniques deployed by us to obtain quick and effective results:",
+          listOne:["We understand and analyze the business aspects of the customers before proceeding ahead with the process of link building. Experts in the organization target the niche customers by send links from websites with extremely high page ranks. It confirms the veracity and authenticity of the sites so that online profile of the client is enhanced by many notches.",
+          "Our Reciprocal link building services strictly follow the ethics of online marketing by preventing the spamming of the target website by non genuine links. Some of the search engines are equipped with strict policies and do not index the pages indulging in above mentioned activities. Therefore, it can be safely said that we follow the organic search engine optimization method in an impeccable manner.",
+          "There are many instances when numerous websites are created on the same webs server with mutual links pointing towards each other. It is a marketing gimmick to increase the number of links; however we are renowned and reputed for trying and testing the conventional search engine optimization techniques without any hiccups. They help a great deal to build the reputation of the website over a period of time.",
+          "We strongly discourage the idea of back links from porn sites because it results in bad user experience. Apart from above, our technical executives unlike other company do not post links on the blog sites because it creates a negative influence on the business prospects of our esteemed business customers.",
+          "In the arena of Reciprocal link building services, we have taken giant strides forward by providing innumerable options to the users. We conduct an exhaustive analysis of the required web link to understand the business perspectives and take actions accordingly to boost the ranking of the websites.",
+           ],
+          description1:"Reciprocal link building services by our company allows the spiders to index the web pages and regularly leading to a spurt in rankings to a great extent",
+          }
+          ],
+         
+          weDoTitle: "We Do",
+          weDoDescription: "Our clientele includes multinational corporations, small & medium enterprises, NGOs & development sector organizations.",
+          weDoItems: [
+          {
+          title: "Design",
+          image: "images/we_docurly.png",
+          items: ["Web design", "Art design", "Logo & branding", "UI & UX"]
+          },
+          {
+          title: "Web Development",
+          image: "images/we_docurly.png",
+          items: ["Front end & Back end", "Interaction design", "Magento,Wordpress", "Symfony,Laravel"]
+          }
+          ]
+          },
+          "/bulk-link-building": {
+            cls: "bulk-link-building-box",
+            title: "Customized bulk link building packages",
+            subtitle: "Creating an instant impression on the users.Contact us to know more about our methodology and pricing details",
+            description: [
+            "We have created numerous ways and means through which the customers could select the option of Customized bulk link building packages which are amazing and would go a long way in providing quantum reduction in the prices.",
+            "Our company is one of the pioneers in offering SEO manual submission services to the users which are considered crucial to reduce the overall cost of search engine optimization process.",
+            ],
+            expertiseTitle: "Our Expertise",
+            expertiseText: "As a successful web design company in India, Solvonix has been providing its numerous clients with quality and affordable website.",
+            expertiseCards: [
+            { title: "Flyer Designing", image: "images/service_icon.png", bgColor: "#34B072" },
+            { title: "Flash Designing", image: "images/service_icon.png", bgColor: "#7D73C5" },
+            { title: "Logo Designing", image: "images/service_icon.png", bgColor: "#EE3E77" },
+            { title: "CMS Designing", image: "images/service_icon.png", bgColor: "#34B072" },
+            { title: "Website ReDesigning", image: "images/service_icon.png", bgColor: "#7D73C5" },
+            { title: "Brochure Designing", image: "images/service_icon.png", bgColor: "#34B072" },
+            { title: "Image Cutout", image: "images/service_icon.png", bgColor: "#7D73C5" },
+            { title: "PSD to HTML", image: "images/service_icon.png", bgColor: "#7D73C5" },
+            ],
+            services: [
+            { 
+           
+            description1:"Many organizations are opting for the packages because they are able to attract significant discounts and enhance their visibility in the market space to a great extent.",
+            description2:"Many organizations are opting for the packages because they are able to attract significant discounts and enhance their visibility in the market space to a great extent.",
+            title2:"Different facets of the Customized bulk link building packages:",
+            listTwo:["We are committed in our endeavor to provide article writing to the users in an impeccable manner. Depending on the numbers of websites, article submissions along with the blogs could increase substantially providing SEO support to numerous links. They are written around the keywords and directed towards the selected group of potential customers pertaining to similar interests",
+            "Our website provides numerous options in which the users need to select the number of web directories where the link would be posted. They will help the client to get noticed by various potential online customers. Various parameters could escalate the cost; however the tradeoff could help the users in enhancing the branding of products or services.",
+            "We take special care in providing large quantities of press releases to our esteemed customers as a part of the Customized bulk link building packages.They are replete with different types of updates about the products and services of a particular organization. Users get periodical updates about the releases, thereby increasing the web traffic. The prospects can be transformed into genuine leads by the marketing executives of the company.",
+            "Another important component of the package is the inbound link occurring from different websites with a page rank which is graded on a scale of 1 to 10 in an effective manner. We are equipped with one of the best bloggers in the industry who are credited for writing scores reviews about the different products and services, thereby raising the possibility of indexing by search pages.",
+            "We have taken a huge lead over our competitors by providing the opportunity of blog submission to different directories and the cost increases depending on the number of websites. Therefore it is crucial for the consumers to align their strategies and requirements according to budget prescribed in Customized bulk link building packages.",
+             ],
+            }
+            ],
+           
+            weDoTitle: "We Do",
+            weDoDescription: "Our clientele includes multinational corporations, small & medium enterprises, NGOs & development sector organizations.",
+            weDoItems: [
+            {
+            title: "Design",
+            image: "images/we_docurly.png",
+            items: ["Web design", "Art design", "Logo & branding", "UI & UX"]
+            },
+            {
+            title: "Web Development",
+            image: "images/we_docurly.png",
+            items: ["Front end & Back end", "Interaction design", "Magento,Wordpress", "Symfony,Laravel"]
+            }
+            ]
+            },
+            "/one-way-link-building": {
+              cls: "one-way-link-building-box",
+              title: "One Way Link Building Services",
+              subtitle: "This makes your website and your business, ideas, thoughts more visible and accessible by your target and prospective audiences.",
+              description: [
+              "Quality link building opens up numerous means for people to get access to your website.",
+              "Solvonix offers the best and the most innovative link building services to one and all. As a professional link building company in India, we are among the very few, who strictly follow white hat SEO techniques and generate quality, effective, and stable links; so that your website come up with the best appearance in the search engine results."
+              ],
+              expertiseTitle: "Our Expertise",
+              expertiseText: "As a successful web design company in India, Solvonix has been providing its numerous clients with quality and affordable website.",
+              expertiseCards: [
+              { title: "One Way Links", image: "images/service_icon.png", bgColor: "#34B072" },
+              { title: "Quality Links", image: "images/service_icon.png", bgColor: "#7D73C5" },
+              { title: "Cheap Links", image: "images/service_icon.png", bgColor: "#EE3E77" },
+              { title: "Bulk Links", image: "images/service_icon.png", bgColor: "#34B072" },
+              { title: "PR Links", image: "images/service_icon.png", bgColor: "#7D73C5" },
+              { title: "Reciprocal Links", image: "images/service_icon.png", bgColor: "#34B072" },
+              { title: "Forum Links", image: "images/service_icon.png", bgColor: "#7D73C5" },
+              ],
+              services: [
+              {
+              description1:"Considered as one of the most prominent off-site SEO strategies, link building services are very much essential for the popularity and improved ranking of your website. This ultimately coverts into growth in your business as more numbers of people come to your website, spend quality time there, read about your ideas and thoughts; and do business with you.",
+              description3:"At Solvonix, we put emphasis both on the 'One-Way' as well as 'Reciprocal' link building techniques so that your website gets a holistic approach and you, the best out of it.",
+              title2: "One Way Link Building Service:",
+              description4:"We work on to put not only one, but as many web pages of your site as possible in other websites of similar importance and significance. Be assured that your websites get more numbers of inbound linked from quality websites so that in due course of time the overall ranking of the websites keeps on improving, resulting in better appearance in all major search engines including Google, Bing, and Yahoo etc.",
+              title3:"Reciprocal Link Building Service:",
+              description5:"It is equally important for your website to generate reciprocal links so that your site becomes distinctly visible within similar interest groups. Here, we definitely give the utmost important that your site generate more inbound links than outbound, strictly ensuring that there are not bad links.",
+              description6:"All the links built will have supported anchor text for decent appearance.",
+              description7:"With our professional link building experts, Solvonix guarantees risk-free, productive link building services so that you get maximum out of your investment in return.",
+
+              }
+              ],
+              weDoTitle: "We Do",
+              weDoDescription: "Our clientele includes multinational corporations, small & medium enterprises, NGOs & development sector organizations.",
+              weDoItems: [
+              {
+              title: "Design",
+              image: "images/we_docurly.png",
+              items: ["Web design", "Art design", "Logo & branding", "UI & UX"]
+              },
+              {
+              title: "Web Development",
+              image: "images/we_docurly.png",
+              items: ["Front end & Back end", "Interaction design", "Magento,Wordpress", "Symfony,Laravel"]
+              }
+              ]
+              },
+              "/custom-link-building-package": {
+                cls: "/quality-link-building-box",
+                title: "Quality Link Building Services",
+                subtitle: "This makes your website and your business, ideas, thoughts more visible and accessible by your target and prospective audiences.",
+                description: [
+                "Quality link building opens up numerous means for people to get access to your website.",
+                "Solvonix offers the best and the most innovative link building services to one and all. As a professional link building company in India, we are among the very few, who strictly follow white hat SEO techniques and generate quality, effective, and stable links; so that your website come up with the best appearance in the search engine results."
+                ],
+                expertiseTitle: "Our Expertise",
+                expertiseText: "As a successful web design company in India, Solvonix has been providing its numerous clients with quality and affordable website.",
+                expertiseCards: [
+                { title: "One Way Links", image: "images/service_icon.png", bgColor: "#34B072" },
+                { title: "Quality Links", image: "images/service_icon.png", bgColor: "#7D73C5" },
+                { title: "Cheap Links", image: "images/service_icon.png", bgColor: "#EE3E77" },
+                { title: "Bulk Links", image: "images/service_icon.png", bgColor: "#34B072" },
+                { title: "PR Links", image: "images/service_icon.png", bgColor: "#7D73C5" },
+                { title: "Reciprocal Links", image: "images/service_icon.png", bgColor: "#34B072" },
+                { title: "Forum Links", image: "images/service_icon.png", bgColor: "#7D73C5" },
+                ],
+                services: [
+                {
+                description1:"Considered as one of the most prominent off-site SEO strategies, link building services are very much essential for the popularity and improved ranking of your website. This ultimately coverts into growth in your business as more numbers of people come to your website, spend quality time there, read about your ideas and thoughts; and do business with you",
+                description3:"At Solvonix, we put emphasis both on the 'One-Way' as well as 'Reciprocal' link building techniques so that your website gets a holistic approach and you, the best out of it.",
+                title2: "One Way Link Building Service:",
+                description4:"We work on to put not only one, but as many web pages of your site as possible in other websites of similar importance and significance. Be assured that your websites get more numbers of inbound linked from quality websites so that in due course of time the overall ranking of the websites keeps on improving, resulting in better appearance in all major search engines including Google, Bing, and Yahoo etc.",
+                title3:"Reciprocal Link Building Service:",
+                description5:"It is equally important for your website to generate reciprocal links so that your site becomes distinctly visible within similar interest groups. Here, we definitely give the utmost important that your site generate more inbound links than outbound, strictly ensuring that there are not bad links.",
+                description6:"All the links built will have supported anchor text for decent appearance.",
+                description7:"With our professional link building experts, Solvonix guarantees risk-free, productive link building services so that you get maximum out of your investment in return.",
+  
+                }
+                ],
+                weDoTitle: "We Do",
+                weDoDescription: "Our clientele includes multinational corporations, small & medium enterprises, NGOs & development sector organizations.",
+                weDoItems: [
+                {
+                title: "Design",
+                image: "images/we_docurly.png",
+                items: ["Web design", "Art design", "Logo & branding", "UI & UX"]
+                },
+                {
+                title: "Web Development",
+                image: "images/we_docurly.png",
+                items: ["Front end & Back end", "Interaction design", "Magento,Wordpress", "Symfony,Laravel"]
+                }
+                ]
+                },
+      
+    
   
 
   };
