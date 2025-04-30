@@ -6,7 +6,16 @@ import ReCAPTCHA from "react-google-recaptcha";
 import SeoComponent from '../components/SeoComponent';
 export default function ReachUs() {
 
+  const [name,setName]=useState("");
+  const [mobile,setMobile]=useState("");
+  const [email,setEmail]=useState("");
+  const [message,setMessage]=useState("");
+
+
+
   const [captchaValue, setCaptchaValue] = useState(null);
+
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -15,8 +24,19 @@ export default function ReachUs() {
       return;
     }
     alert("Form submitted successfully!");
+
+    console.log("name",name);
+    console.log("email",email);
+    console.log("mobile",mobile);
+    console.log("message",message);
+
+    setName("");
+    setMobile("");
+    setEmail("");
+    setMessage("");
   };
 
+ 
   return (
 
     <>
@@ -63,22 +83,29 @@ export default function ReachUs() {
          type="text"
          placeholder='Your Name'
          className='border-0 outline-0 border-b-[1px] p-2 border-gray-400 text-gray-400'
+         value={name}
+         onChange={(e)=>setName(e.target.value)}
          />
         </div>
         <div className='flex flex-col py-3'>
         <label className='text-gray-700'>Your Mobile Number</label>
          <input 
-         type="text"
+         type="number"
          placeholder='Your Mobile Number'
          className='border-0 outline-0 border-b-[1px] p-2 border-gray-400 text-gray-400'
+         value={mobile}
+         onChange={(e)=>setMobile(e.target.value)}
+         
          />
         </div>
         <div className='flex flex-col py-3'>
         <label className='text-gray-700'>Your Email Address</label>
          <input 
-         type="text"
+         type="email"
          placeholder='Your Email Address'
          className='border-0 outline-0 border-b-[1px] p-2 border-gray-400 text-gray-400'
+         value={email}
+         onChange={(e)=>setEmail(e.target.value)}
          />
         </div>
         <div className='flex flex-col py-3'>
@@ -87,10 +114,12 @@ export default function ReachUs() {
          type="text"
          placeholder='Your Message'
          className='border-0 outline-0 border-b-[1px] p-2 border-gray-400 text-gray-400'
+         value={message}
+         onChange={(e)=>setMessage(e.target.value)}
          />
         </div>
             <ReCAPTCHA
-        sitekey="6LfWpggrAAAAACk3PyuPcFDsQOVHrxkt1ZTehV9R"  // Google se milega
+        sitekey="6LfqhCkrAAAAALg5Ctr2uYCd95mftSVcFRsdBrro"  // Google se milega
         onChange={(value) => setCaptchaValue(value)}
       />
           <button type="submit" className='px-3 py-3 rounded bg-[#EE3E77] text-white font-light w-full text-center mt-5 hover:bg-black text-2xl'>Send</button>

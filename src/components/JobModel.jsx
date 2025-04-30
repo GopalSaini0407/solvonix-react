@@ -29,6 +29,23 @@ const Modal = ({ isOpen, onClose, title, children }) => {
 
 export default function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  
+  const [name,setName]=useState("");
+  const [email,setEmail]=useState("");
+  const [file,setFile]=useState(null);
+
+  const handleSubmit=(e)=>
+    {
+      e.preventDefault();
+
+        console.log('Name',name);
+        console.log("Email",email);
+        console.log('File',file?.name);
+        alert("Submit Successfully");
+        setName("");
+        setEmail("");
+        setFile(null);
+    }
 
   return (
     <div className="flex flex-col items-center justify-center bg-gray-100">
@@ -40,7 +57,7 @@ export default function App() {
       </button>
 
       <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} title="Apply for this Job">
-      <form className="space-y-5">
+      <form className="space-y-5" onSubmit={handleSubmit}>
         <div className="flex input-boxes">
         <div className="border border-gray-300 border-l-0 pe-3 py-3">
           <label className="block text-gray-600 text-sm font-medium lg:text-1xl mb-1 text-left">Name <sup className="text-red-600 text-2xl">*</sup></label>
@@ -48,6 +65,9 @@ export default function App() {
             type="text" 
             placeholder="Name" 
             className="w-full  py-2 border-none focus:outline-none text-gray-400"
+            value={name}
+            onChange={(e)=>setName(e.target.value)}
+            required
           />
         </div>
         <div className="border  border-gray-300 border-r-0 border-l-0 ps-3 py-3">
@@ -56,6 +76,9 @@ export default function App() {
             type="email"
             placeholder="Email" 
             className="w-full  py-2 border-none focus:outline-none text-gray-400"
+            value={email}
+            onChange={(e)=>setEmail(e.target.value)}
+            required
           />
         </div>
         </div>
@@ -63,9 +86,16 @@ export default function App() {
             <span className="text-4xl"><FaFileAlt /></span>
             <h3>Drag and drop CV Document here or
             browse for a document to upload</h3>
-            <input type="file" placeholder="file"/>
+            <input type="file" placeholder="file"
+            
+            onChange={(e)=>setFile(e.target.files[0])
+
+            }
+           required
+            />
         </div>
         <button
+        type="submit"
             className="px-4 py-2 w-full bg-pink-500 text-white rounded-lg hover:bg-gray-600"
           >
             Apply
