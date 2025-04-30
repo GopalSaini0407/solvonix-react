@@ -184,7 +184,7 @@ export default function HeaderBottom() {
               <div className='pt-5 lg:pb-70 md:pb-50 lg:relative mx-0 px-0'> 
                 <div className="careerGallary lg:absolute grid grid-flow-col grid-cols-1 grid-rows-5 md:grid-rows-3 md:grid-cols-3  gap-3 sm:h-100">
               <motion.div className="careerImg md:row-span-3"
-               initial={{ opacity:0, x:-300}}
+               initial={{ opacity:0, x:-100}}
                whileInView={{ opacity:1, x:0}}
                transition={{ duration:0.5 }}
                viewport={{ once:true }}
@@ -207,14 +207,14 @@ export default function HeaderBottom() {
                 <img src={content.careerImg.careerImg3} className='object-cover size-full' alt="img" loading="lazy"/>
                 </motion.div>
               <motion.div className="careerImg"
-               initial={{ opacity:0, x:300}}
+               initial={{ opacity:0, x:100}}
                whileInView={{ opacity:1, x:0}}
                transition={{ duration:0.5 }}
                viewport={{ once:true }}>
                 <img src={content.careerImg.careerImg4} className='object-cover size-full' alt="img" loading="lazy"/>
                 </motion.div>
               <motion.div className="careerImg md:row-span-2"
-               initial={{ opacity:0, x:300}}
+               initial={{ opacity:0, x:100}}
                whileInView={{ opacity:1, x:0}}
                transition={{ duration:0.5 }}
                viewport={{ once:true }}>

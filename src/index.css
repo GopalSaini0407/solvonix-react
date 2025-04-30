@@ -4,11 +4,6 @@
 @import "tailwindcss";
 
 
-header.home
-{
-  min-height:100vh;
-}
-
 
 /* navbar */
 
@@ -69,12 +64,17 @@ html, body {
 /* home css */
 .counter-section .counter-box
 {
-  /* width: 175px;
-  height: 175px; */
+  
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+} 
+.about .counter-section .counter-box
+{
+  
+ background-color: #fff;
+ color: grey;
 } 
 .counter-section .counter-box:nth-child(even)
 {
@@ -301,6 +301,16 @@ color: #fff;
     min-height:100%;
   }
   
+}
+@media (max-width: 1023px) and (min-width: 768px) {
+
+  .about .about-bottom-box
+  {
+    padding-bottom: 189px;
+  }
+  .portfolio .child-four,.sub-component .child-four{
+    top: 196px;
+  }
 }
 
 @media (max-width: 1023px) {

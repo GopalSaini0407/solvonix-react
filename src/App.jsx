@@ -9,7 +9,7 @@ const Careers = lazy(() => import("./pages/Careers"));
 const Portfolio = lazy(() => import("./pages/Portfolio"));
 const ReachUs = lazy(() => import("./pages/ReachUs"));
 const SubComponent = lazy(() => import("./components/SubComponent"));
-const Demo = lazy(() => import("./components/Demo"));
+const ScrollToTop = lazy(() => import("./components/ScrollToTop"));
 
 // Non-Lazy Components (Navbar & Header should always load fast)
 import Navbar from "./components/Navbar";
@@ -19,6 +19,7 @@ function App() {
   return (
     <HelmetProvider>
       <Router>
+      <ScrollToTop /> 
         <Navbar />
         <Header />
         <Suspense fallback={<div>Loading...</div>}>
@@ -29,7 +30,6 @@ function App() {
             <Route path="/careers" element={<Careers />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/reach-us" element={<ReachUs />} />
-            <Route path="/demo" element={<Demo />} />
 
             {/* Sub Components Lazy Loaded */}
             <Route path="/seo-services" element={<SubComponent />} />
