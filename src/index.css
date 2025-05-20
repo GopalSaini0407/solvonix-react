@@ -267,6 +267,11 @@ color: #fff;
   grid-column: span 2;
 }
 
+.shopify-parent-header
+{
+  padding: 0;
+  padding-bottom: 1.5rem;
+}
 
 @media (max-width: 640px) {
   .counter-section .counter-box:nth-child(2n) {

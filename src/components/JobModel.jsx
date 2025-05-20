@@ -59,7 +59,7 @@ export default function App() {
       <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} title="Apply for this Job">
       <form className="space-y-5" onSubmit={handleSubmit}>
         <div className="flex input-boxes">
-        <div className="border border-gray-300 border-l-0 pe-3 py-3">
+        <div className="border border-gray-300 border-l-0 pe-3 py-3 w-[50%]">
           <label className="block text-gray-600 text-sm font-medium lg:text-1xl mb-1 text-left">Name <sup className="text-red-600 text-2xl">*</sup></label>
           <input 
             type="text" 
@@ -70,7 +70,7 @@ export default function App() {
             required
           />
         </div>
-        <div className="border  border-gray-300 border-r-0 border-l-0 ps-3 py-3">
+        <div className="border  border-gray-300 border-r-0 border-l-0 ps-3 py-3 w-[50%]">
           <label className="block text-gray-600 text-sm font-medium mb-1 text-left">Email <sup className="text-red-600 text-2xl">*</sup> </label>
           <input 
             type="email"

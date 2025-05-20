@@ -17,7 +17,7 @@ export default function Careers() {
   return (
 
     <>
-   <SeoComponent page="career"/>
+   <SeoComponent page="career"   title="careers"/>
 
 <div className='careers'>
       <div className='max-w-[1200px] mx-auto'>

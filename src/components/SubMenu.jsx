@@ -11,6 +11,8 @@ const subMenuData = [
       { name: "PPC Services", path: "/ppc-services" },
       { name: "Blog Marketing", path: "/blog-marketing" },
       { name: "Article Syndication", path: "/article-syndication" },
+      { name: "Shopify Development", path: "/shopify" },
+
     ],
   },
   {

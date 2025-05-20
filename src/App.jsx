@@ -11,6 +11,9 @@ const ReachUs = lazy(() => import("./pages/ReachUs"));
 const SubComponent = lazy(() => import("./components/SubComponent"));
 const ScrollToTop = lazy(() => import("./components/ScrollToTop"));
 
+const Shopify = lazy(() => import("./pages/shopify"));
+
+
 // Non-Lazy Components (Navbar & Header should always load fast)
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
@@ -30,6 +33,8 @@ function App() {
             <Route path="/careers" element={<Careers />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/reach-us" element={<ReachUs />} />
+            <Route path="/shopify" element={<Shopify/>} />
+
 
             {/* Sub Components Lazy Loaded */}
             <Route path="/seo-services" element={<SubComponent />} />

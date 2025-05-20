@@ -17,7 +17,7 @@ export function ServiceSection({pageData}) {
 
               }
               {
-                   service.title1 && <h1 className="text-2xl md:text-4xl py-[30px] text-[#2d2d2d] font-medium">{service.title1}</h1>
+                   service.title1 && <h1 className="text-2xl md:text-3xl py-[30px] text-[#2d2d2d] font-medium">{service.title1}</h1>
 
               }
               {
@@ -37,7 +37,7 @@ export function ServiceSection({pageData}) {
 
           }
           {
-            service.title2 && <h1 className="text-[1.3rem] md:text-4xl py-[30px] text-[#2d2d2d] font-medium">{service.title2}</h1>
+            service.title2 && <h1 className="text-[1.3rem] md:text-3xl py-[30px] text-[#2d2d2d] font-medium">{service.title2}</h1>
 
           }
           {
@@ -56,7 +56,7 @@ export function ServiceSection({pageData}) {
             ))
           }
           {
-            service.title3 && <h1 className="text-[1.3rem] md:text-4xl py-[30px] text-[#2d2d2d] font-medium">{service.title3}</h1>
+            service.title3 && <h1 className="text-[1.3rem] md:text-3xl py-[30px] text-[#2d2d2d] font-medium">{service.title3}</h1>
 
           }
           {
@@ -146,7 +146,7 @@ export function ServiceSection({pageData}) {
           <div key={index}>
         
             {
-                 service.title1 && <h1 className="text-[1.3rem] md:text-4xl py-[30px] text-[#2d2d2d] font-medium">{service.title1}</h1>
+                 service.title1 && <h1 className="text-[1.3rem] md:text-3xl py-[30px] text-[#2d2d2d] font-medium">{service.title1}</h1>
 
             }
         
@@ -158,7 +158,7 @@ export function ServiceSection({pageData}) {
           ))
         }
         {
-          service.title2 && <h1 className="text-[1.3rem] md:text-4xl py-[30px] text-[#2d2d2d] font-medium">{service.title2}</h1>
+          service.title2 && <h1 className="text-[1.3rem] md:text-3xl py-[30px] text-[#2d2d2d] font-medium">{service.title2}</h1>
 
         }
         {
@@ -221,7 +221,7 @@ export function ServiceSection({pageData}) {
           <div key={index}>
         
             {
-                 service.title1 && <h1 className="text-[1.3rem] md:text-4xl py-[30px] text-[#2d2d2d] font-medium">{service.title1}</h1>
+                 service.title1 && <h1 className="text-[1.3rem] md:text-3xl py-[30px] text-[#2d2d2d] font-medium">{service.title1}</h1>
 
             }
         

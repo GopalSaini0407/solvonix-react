@@ -115,6 +115,7 @@ const seoData = {
     description: "Engaging and SEO-friendly content for your brand.",
     keywords: "Content writing, blog writing, SEO content",
   },
+
   };
   
   export default seoData;
