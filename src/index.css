@@ -232,8 +232,8 @@ color: #fff;
   grid-template-columns:1fr;
   gap:20px
 }
-.web-design-box .service-section ,.brochure-designing-box 
-.service-section, .flyer-designing-box .service-section ,.facebook-application-box .service-section,
+.web-design-box .service-section ,.brochure-designing-box .service-section,
+ .flyer-designing-box .service-section ,.facebook-application-box .service-section,
 .php-development-box .service-section,.cms-development-box .service-section ,.e-commerce-box .service-section,
 .guest-blogging-box .service-section,.website-redesigning-box .service-section,.flash-designing-box .service-section
 
@@ -272,8 +272,15 @@ color: #fff;
   padding: 0;
   padding-bottom: 1.5rem;
 }
+.about-whychoose li{
+background-position-y:center;
+}
 
 @media (max-width: 640px) {
+  .about-whychoose li{
+    background-position-y:10px;
+    padding-left: 18px;
+    }
   .counter-section .counter-box:nth-child(2n) {
     top: 0;
   }

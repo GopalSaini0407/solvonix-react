@@ -77,7 +77,7 @@ export default function ReachUs() {
 
             {/* Form Section */}
             <motion.div
-              className='reach-us-form md:flex-1/2 w-full p-8 bg-white rounded-xl shadow-lg'
+              className='reach-us-form md:flex-1/2 w-full p-8 bg-white shadow-lg'
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
@@ -153,7 +153,7 @@ export default function ReachUs() {
                 {/* Submit Button */}
                 <motion.button
                   type="submit"
-                  className='px-3 py-3 rounded bg-[#EE3E77] text-white font-light w-full text-center mt-5 hover:bg-black text-2xl'
+                  className='px-3 py-3 rounded bg-[#EE3E77] text-white font-light w-full text-center mt-5 hover:bg-[#ee3e96] text-2xl'
                   initial={{ opacity: 0, scale: 0.95 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   whileHover={{ scale: 1.03 }}

@@ -7,7 +7,7 @@ export function ServiceSection({pageData}) {
      <div className="service-section">
           {/* Services Section */}
           {
-          pageData.services &&   <section className="child-two p-8 mb-10 border-2 border-gray-300 relative after:content-[''] after:absolute after:left-[10%] after:bottom-0 after:h-[3px] after:w-[80%] after:bg-[#EE3E77]">
+          pageData.services &&   <section className="child-two p-2 md:p-8 mb-10 border-2 border-gray-300 relative after:content-[''] after:absolute after:left-[10%] after:bottom-0 after:h-[3px] after:w-[80%] after:bg-[#EE3E77]">
           {/* <h3 className="sm:2xl md:text-3xl lg:text-4xl font-semibold pb-5 text-[#2d2d2d]">Our Search engine optimization methodology includes:</h3> */}
           {pageData.services && pageData.services.map((service, index) => (
             <div key={index}>
@@ -28,7 +28,7 @@ export function ServiceSection({pageData}) {
           {
            service.listOne && service.listOne.map((list,index)=>(
               <ul key={index} className='about-whychoose text-[#A0A0A0] leading-9 text-sm lg:text-[15px]'>
-              <li className="bg-[url(/images/choose_listicon.jpg)] bg-no-repeat bg-left flex items-center pl-6">{list}</li>
+              <li className="bg-[url(/images/choose_listicon.jpg)] bg-no-repeat pl-[39px] leading-[28px]">{list}</li>
           </ul>
             ))
           }
@@ -51,7 +51,7 @@ export function ServiceSection({pageData}) {
       {
             service.listTwo && service.listTwo.map((list,index)=>(
               <ul key={index} className='about-whychoose text-[#A0A0A0] leading-9 text-sm lg:text-[15px]'>
-              <li className="bg-[url(/images/choose_listicon.jpg)] bg-no-repeat bg-left flex items-center pl-6">{list}</li>
+              <li className="bg-[url(/images/choose_listicon.jpg)] bg-no-repeat pl-[39px] leading-[28px]">{list}</li>
           </ul>
             ))
           }
@@ -69,7 +69,7 @@ export function ServiceSection({pageData}) {
                  {
             service.listThree && service.listThree.map((list,index)=>(
               <ul key={index} className='about-whychoose text-[#A0A0A0] leading-9 text-sm lg:text-[15px]'>
-              <li className="bg-[url(/images/choose_listicon.jpg)] bg-no-repeat bg-left flex items-center pl-6">{list}</li>
+              <li className="bg-[url(/images/choose_listicon.jpg)] bg-no-repeat pl-[39px] leading-[28px]">{list}</li>
           </ul>
             ))
           }
@@ -102,7 +102,7 @@ export function ServiceSection({pageData}) {
               {
             service.listFour && service.listFour.map((list,index)=>(
               <ul key={index} className='about-whychoose text-[#A0A0A0] leading-9 text-sm lg:text-[15px]'>
-              <li className="bg-[url(/images/choose_listicon.jpg)] bg-no-repeat bg-left flex items-center pl-6">{list}</li>
+              <li className="bg-[url(/images/choose_listicon.jpg)] bg-no-repeat pl-[39px] leading-[28px]">{list}</li>
           </ul>
             ))
           }
@@ -140,7 +140,7 @@ export function ServiceSection({pageData}) {
 
        {/* Services 2 Section */}
        {
-        pageData.services2 &&  <section className="child-two p-8 mb-10 border-2 border-gray-300 relative after:content-[''] after:absolute after:left-[10%] after:bottom-0 after:h-[3px] after:w-[80%] after:bg-[#EE3E77]">
+        pageData.services2 &&  <section className="child-two p-2 md:p-8 mb-10 border-2 border-gray-300 relative after:content-[''] after:absolute after:left-[10%] after:bottom-0 after:h-[3px] after:w-[80%] after:bg-[#EE3E77]">
         {/* <h3 className="sm:2xl md:text-3xl lg:text-4xl font-semibold pb-5 text-[#2d2d2d]">Our Search engine optimization methodology includes:</h3> */}
         {pageData.services2 && pageData.services2.map((service, index) => (
           <div key={index}>
@@ -153,7 +153,7 @@ export function ServiceSection({pageData}) {
         {
          service.listOne && service.listOne.map((list,index)=>(
             <ul key={index} className='about-whychoose text-[#A0A0A0] leading-9 text-sm lg:text-[15px]'>
-            <li className="bg-[url(/images/choose_listicon.jpg)] bg-no-repeat bg-left flex items-center pl-6">{list}</li>
+            <li className="bg-[url(/images/choose_listicon.jpg)] bg-no-repeat pl-[39px] leading-[28px]">{list}</li>
         </ul>
           ))
         }
@@ -169,7 +169,7 @@ export function ServiceSection({pageData}) {
     {
           service.listTwo && service.listTwo.map((list,index)=>(
             <ul key={index} className='about-whychoose text-[#A0A0A0] leading-9 text-sm lg:text-[15px]'>
-            <li className="bg-[url(/images/choose_listicon.jpg)] bg-no-repeat bg-left flex items-center pl-6">{list}</li>
+            <li className="bg-[url(/images/choose_listicon.jpg)] bg-no-repeat pl-[39px] leading-[28px]">{list}</li>
         </ul>
           ))
         }
@@ -185,7 +185,7 @@ export function ServiceSection({pageData}) {
 
         {/* Services 3 Section */}
         {
-        pageData.services3 &&  <section className="child-two mb-10 p-8 border-2 border-gray-300 relative after:content-[''] after:absolute after:left-[10%] after:bottom-0 after:h-[3px] after:w-[80%] after:bg-[#EE3E77]">
+        pageData.services3 &&  <section className="child-two mb-10 p-2 md:p-8 border-2 border-gray-300 relative after:content-[''] after:absolute after:left-[10%] after:bottom-0 after:h-[3px] after:w-[80%] after:bg-[#EE3E77]">
         {/* <h3 className="sm:2xl md:text-3xl lg:text-4xl font-semibold pb-5 text-[#2d2d2d]">Our Search engine optimization methodology includes:</h3> */}
         {pageData.services3 && pageData.services3.map((service, index) => (
           <div key={index}>
@@ -198,7 +198,7 @@ export function ServiceSection({pageData}) {
         {
          service.listOne && service.listOne.map((list,index)=>(
             <ul key={index} className='about-whychoose text-[#A0A0A0] leading-9 text-sm lg:text-[15px]'>
-            <li className="bg-[url(/images/choose_listicon.jpg)] bg-no-repeat bg-left flex items-center pl-6">{list}</li>
+            <li className="bg-[url(/images/choose_listicon.jpg)] bg-no-repeat pl-[39px] leading-[28px]">{list}</li>
         </ul>
           ))
         }
@@ -215,7 +215,7 @@ export function ServiceSection({pageData}) {
 
          {/* Services 4 Section */}
          {
-        pageData.services4 &&  <section className="child-two mb-10 p-8 border-2 border-gray-300 relative after:content-[''] after:absolute after:left-[10%] after:bottom-0 after:h-[3px] after:w-[80%] after:bg-[#EE3E77]">
+        pageData.services4 &&  <section className="child-two mb-10 p-2 md:p-8 border-2 border-gray-300 relative after:content-[''] after:absolute after:left-[10%] after:bottom-0 after:h-[3px] after:w-[80%] after:bg-[#EE3E77]">
         {/* <h3 className="sm:2xl md:text-3xl lg:text-4xl font-semibold pb-5 text-[#2d2d2d]">Our Search engine optimization methodology includes:</h3> */}
         {pageData.services4 && pageData.services4.map((service, index) => (
           <div key={index}>
@@ -252,7 +252,7 @@ export function ServiceSection({pageData}) {
         {
           pageData.bottomList &&  pageData.bottomList.map((list,index)=>(
             <ul key={index} className='about-whychoose text-[#A0A0A0] leading-9 text-sm lg:text-[15px]'>
-            <li className="bg-[url(/images/choose_listicon.jpg)] bg-no-repeat bg-left flex items-center pl-6">{list}</li>
+            <li className="bg-[url(/images/choose_listicon.jpg)] bg-no-repeat pl-[39px] leading-[28px]">{list}</li>
           </ul>
           ))
         }

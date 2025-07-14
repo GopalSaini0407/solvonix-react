@@ -299,10 +299,10 @@ export default function HeaderBottom() {
               viewport={{ once: true }}
             >
               <h1 className="text-lg lg:text-4xl font-bold mb-4 text-start">
-                Shopify Development Services
+              Custom Shopify Store Development
               </h1>
               <p className="text-md lg:text-lg text-gray-100 mb-6 text-start">
-                Say hello to Hassle-Free, Promising Web management
+              Elevate your eCommerce business with tailored Shopify development solutions. 
               </p>
 
               {/* Divider */}
@@ -323,11 +323,24 @@ export default function HeaderBottom() {
                 }}
               >
                 {[
-                  'Go-To for Premium Shopify Development services.',
-                  'Experience Professional Design, SEO Optimized, and',
-                  'Budget-Friendly Shopify Solutions',
-                  'Tailor-made Shopify development to your needs with our experts!',
-                ].map((item, idx) => (
+  {
+    "title": "Custom Store",
+    "description": "customized & conversion-optimized Shopify stores tailored to your."
+  },
+  {
+    "title": "Theme Customization",
+    "description": "visually stunning, mobile-responsive storefront with seamless user experience"
+  },
+  {
+    "title": "App Integration & Custom Features",
+    "description": "custom-built features and integrations with top Shopify apps."
+  },
+  {
+    "title": "Migration & Ongoing Support",
+    "description": "Seamlessly migrate from any platform and continuous support."
+  }
+]
+.map((item, idx) => (
                   <motion.li
                     key={idx}
                     className="flex items-start text-left text-sm lg:text-md"
@@ -338,31 +351,24 @@ export default function HeaderBottom() {
                     transition={{ duration: 0.4 }}
                   >
                     <img src="./images/right-icon.png" alt="" className="w-5 h-5 mr-2 mt-1" />
-                    {item}
+                    <div>
+                    <span className='mr-2 font-bold'>{item.title}:</span>
+                    <span>{item.description}</span> 
+                    </div>
+                    
                   </motion.li>
                 ))}
               </motion.ul>
 
               {/* Partner Section */}
               <motion.div
-                className="flex flex-wrap items-center justify-between gap-6 mt-8 bg-white px-4 py-2 rounded-lg shadow-sm"
+                className="flex mt-8 text-left"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ delay: 0.4, duration: 0.6 }}
                 viewport={{ once: true }}
               >
-                {['micorosoft_icon.png', 'cmmi-level.png', 'cluth.png', 'aws.png'].map((img, idx) => (
-                  <div
-                    key={idx}
-                    className="flex-1 min-w-[50px] max-w-[100px]"
-                  >
-                    <img
-                      className="w-full h-auto object-contain"
-                      src={`./images/${img}`}
-                      alt={`Partner ${idx + 1}`}
-                    />
-                  </div>
-                ))}
+                <p>From custom theme design to advanced app integrations, we create high-performing, user-friendly stores that convert. Whether you're launching a new store or optimizing an existing one, our Shopify experts deliver scalable solutions that grow with your brand.</p>
               </motion.div>
             </motion.div>
           </div>

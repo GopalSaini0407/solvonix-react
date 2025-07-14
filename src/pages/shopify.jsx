@@ -121,10 +121,6 @@ const staggerContainer = {
 
 export default function Shopify() {
 
-// const navigate=useNavigate();
-
-//  const contactRef = useRef(null);
-
   const handleScrollToContact = () => {
    window.scrollTo({
     top:0,
@@ -164,8 +160,8 @@ export default function Shopify() {
                   Comprehensive <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ed3d76] to-[#bf456c]">Shopify Solutions</span>
                 </h2>
                 <p className="text-md lg:text-xl text-gray-600 max-w-2xl mx-auto">
-                  End-to-end services to build, optimize, and scale your eCommerce store
-                </p>
+                End-to-End services to build optimize and scale your eCommerce store.
+                                </p>
               </motion.div>
     
               <motion.div 
@@ -178,38 +174,38 @@ export default function Shopify() {
                 {[
                   {
                     icon: <Layout className="w-10 h-10" />,
-                    title: "Custom Theme Development",
-                    desc: "Pixel-perfect, responsive themes tailored to your brand",
+                    title: "Shopify Custom Theme Development",
+                    desc: "We create fully custom Shopify themes that are visually stunning, mobile-responsive, and optimized for conversions. Tailored to your brand and user journey, our themes enhance the customer experience while ensuring fast performance and seamless navigation across all devices.",
                     color: "from-blue-500 to-blue-600"
                   },
                   {
                     icon: <Cpu className="w-10 h-10" />,
-                    title: "App Development",
-                    desc: "Custom Shopify apps to extend functionality",
+                    title: "Shopify App Development",
+                    desc: "Enhance your store’s capabilities with custom Shopify app development. Whether you need private apps, public apps, or unique functionality, we build secure, scalable apps that integrate smoothly with your store and improve both backend operations and customer engagement.",
                     color: "from-purple-500 to-purple-600"
                   },
                   {
                     icon: <Globe className="w-10 h-10" />,
                     title: "Headless Commerce",
-                    desc: "Modern headless Shopify implementations",
+                    desc: "Unlock complete flexibility and performance with headless Shopify development. We decouple the frontend from the backend, allowing you to deliver lightning-fast, omnichannel shopping experiences using modern frameworks like React, Vue, or Next.js—all while still leveraging Shopify’s powerful eCommerce backend.",
                     color: "from-indigo-500 to-indigo-600"
                   },
                   {
                     icon: <Zap className="w-10 h-10" />,
                     title: "Performance Optimization",
-                    desc: "Lightning-fast store loading under 1 second",
+                    desc: "Speed and performance are critical for conversions. We optimize your Shopify store by minimizing load times, compressing assets, improving code quality, and implementing best practices for SEO and mobile performance—ensuring a smooth and fast experience for your users.",
                     color: "from-cyan-500 to-cyan-600"
                   },
                   {
                     icon: <Server className="w-10 h-10" />,
-                    title: "Shopify Plus Migration",
-                    desc: "Seamless upgrade to enterprise solutions",
+                    title: "Store Migration",
+                    desc: "Seamlessly migrate your existing store to Shopify from platforms like WooCommerce, Magento, or BigCommerce. We handle everything—from product and customer data to SEO settings and design replication—ensuring zero downtime and a smooth transition with no data loss.",
                     color: "from-violet-500 to-violet-600"
                   },
                   {
                     icon: <Clock className="w-10 h-10" />,
-                    title: "Ongoing Maintenance",
-                    desc: "24/7 monitoring and support packages",
+                    title: "Shopify Store Maintenance",
+                    desc: "Keep your Shopify store secure, updated, and running flawlessly with our ongoing maintenance services. From fixing bugs and updating themes to monitoring performance and implementing new features, we ensure your store continues to operate efficiently as your business grows.",
                     color: "from-fuchsia-500 to-fuchsia-600"
                   }
                 ].map((service, index) => (
@@ -234,10 +230,7 @@ export default function Shopify() {
                 ))}
               </motion.div>
             </div>
-
-          
-          </section>
-             <div className='flex justify-center'>
+            <div className='flex justify-center relative z-10'>
       <button
        onClick={handleScrollToContact}
         className="cursor-pointer bg-pink-500 hover:bg-pink-600 text-white px-6 py-2 mt-5 rounded-md font-semibold flex items-center space-x-2"
@@ -246,9 +239,20 @@ export default function Shopify() {
         <span className="text-lg"><ArrowUp /></span>
       </button>
     </div>
+          
+          </section>
+             {/* <div className='flex justify-center'>
+      <button
+       onClick={handleScrollToContact}
+        className="cursor-pointer bg-pink-500 hover:bg-pink-600 text-white px-6 py-2 mt-5 rounded-md font-semibold flex items-center space-x-2"
+      >
+        <span>Contact Us</span>
+        <span className="text-lg"><ArrowUp /></span>
+      </button>
+    </div> */}
     
 {/* Technology Stack Section with Framer Motion */}
-<section className="py-5 lg:py-20 bg-gradient-to-b from-gray-50 to-white">
+<section className="py-5 lg:pb-20 bg-gradient-to-b from-gray-50 to-white">
   <div className="container mx-auto px-6">
     <motion.h2
       className="text-lg lg:text-4xl font-extrabold text-center mb-5 lg:mb-16 text-gray-800"
@@ -321,7 +325,7 @@ export default function Shopify() {
 
       
 {/* Why Choose Us Section with Framer Motion */}
-<section className="lg:py-20 bg-gradient-to-b from-white to-gray-50">
+<section className="lg:p-0">
   <div className="container mx-auto px-6">
     <motion.h2
       className="text-lg lg:text-4xl font-extrabold text-center mb-2 lg:mb-16 text-gray-800"
@@ -330,7 +334,7 @@ export default function Shopify() {
       transition={{ duration: 0.6 }}
       viewport={{ once: true }}
     >
-      Why Choose <span className="text-[#ed3d76]">Solvonix</span> for Your Shopify Store?
+     Why Choose <span className="text-[#ed3d76]">Our</span> Shopify Development Services?
     </motion.h2>
 
     <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
@@ -338,37 +342,37 @@ export default function Shopify() {
         {
           icon: <ShoppingCart className="w-10 h-10 text-white" />,
           title: "eCommerce Experts",
-          desc: "10+ years of experience building successful Shopify stores across various industries.",
+          desc: "Our certified Shopify developers have years of experience crafting successful stores from scratch or optimizing existing ones for maximum performance.",
           color: "bg-blue-600"
         },
         {
           icon: <Code className="w-10 h-10 text-white" />,
-          title: "Custom Solutions",
-          desc: "We craft tailored Shopify experiences aligned to your unique business goals.",
+          title: "Custom Features & App Integrations",
+          desc: "From third-party apps to custom plugin development, we ensure your store has the features you need to streamline operations and boost sales.",
           color: "bg-green-600"
         },
         {
           icon: <Smartphone className="w-10 h-10 text-white" />,
           title: "Mobile-First Approach",
-          desc: "Responsive, high-converting designs optimized for all devices.",
+          desc: "We design Shopify stores with a mobile-first approach, ensuring fast, responsive, and seamless shopping experiences across all devices for maximum user engagement.",
           color: "bg-indigo-600"
         },
         {
           icon: <Shield className="w-10 h-10 text-white" />,
-          title: "Security & Compliance",
-          desc: "We follow best practices to keep your store secure and compliant.",
+          title: "Security and Compliance",
+          desc: "Our Shopify solutions prioritize security and compliance, implementing best practices to protect customer data and ensure your store meets industry standards and regulations.",
           color: "bg-red-500"
         },
         {
           icon: <TrendingUp className="w-10 h-10 text-white" />,
           title: "Conversion-Focused Design",
-          desc: "Designs built to maximize user experience and drive higher sales.",
+          desc: "We design user-friendly, mobile-optimized, and conversion-centric Shopify stores to help you turn visitors into loyal customers.",
           color: "bg-yellow-500"
         },
         {
           icon: <Settings className="w-10 h-10 text-white" />,
           title: "Ongoing Support",
-          desc: "Dedicated post-launch support and maintenance to keep your store thriving.",
+          desc: "Whether you’re migrating from another platform or launching a brand-new store, we provide complete Shopify solutions including development, design, and ongoing support.",
           color: "bg-purple-600"
         }
       ].map((item, index) => (
@@ -409,12 +413,11 @@ export default function Shopify() {
          
 
           <h3 className="font-bold text-lg lg:text-3xl text-[#465463] mb-3">
-            Shopify Development, Customization & Technical Support Services
+          Shopify Development, Customization & Technical Support Services
           </h3>
           <p className="mb-6 text-[#465463] text-md leading-relaxed">
-            Solvonix Technologies
- is the leading Shopify development company. With over 15 years of development, design, and marketing experience,  Solvonix  helps clients get more customers and sales with their Shopify stores. Our Partner Companies ranked in top 15 world best Shopify services provider list. The functionality, and capabilities that Shopify developers alongside our professionals can provide are unbelievable.
- Solvonix Technologies Shopify development services cover a wide range of clients and companies. We can Provide highly scalable development solutions because  excellent technical skills and understandings of Shopify.          </p>
+          We offer a full suite of Shopify development services to help businesses launch, grow, and scale their eCommerce stores. Our services include custom Shopify store development, where we build fully tailored and branded online stores from the ground up, and theme customization, delivering responsive, conversion-optimized designs that reflect your brand identity. We provide Shopify app integration and development, adding advanced functionality and connecting your store with essential third-party tools. For businesses moving platforms, our Shopify migration services ensure smooth, secure transfers without data loss. We also specialize in Shopify Plus development for enterprise-grade solutions, and offer ongoing maintenance and support to keep your store updated, secure, and running at peak performance.
+                  </p>
 
         </motion.div>
 
@@ -465,7 +468,7 @@ export default function Shopify() {
           Affordable & Creative Shopify Ecommerce Website Design Services
           </h3>
           <p className="mb-6 text-[#465463] text-md leading-relaxed">
-Solvonix Technologies consists of experienced Shopify developers that are familiar with the core of this cutting-edge platform and are capable of using its abilities to construct the most incredible e-commerce shops. From creative to software, integration, transfer, marketing, and Shopify Plus Support, we can help our customers with everything. We are specialized in creating specific Shopify Plus e-commerce shops with the needed advanced options. By improving services, you can give your Shopify Plus store a boost in terms of stability and customer experience.      
+          Looking for an affordable yet creative Shopify eCommerce website design service? We specialize in building visually stunning, conversion-focused Shopify stores that align with your brand and budget. Our design approach blends creativity with user experience, ensuring your store looks professional, performs seamlessly on all devices, and drives sales. Whether you're launching a new business or revamping an existing store, we deliver custom themes, intuitive layouts, and mobile-first designs tailored to your goals. With transparent pricing and a commitment to quality, we make high-end Shopify design accessible to businesses of all sizes. Let us help you stand out in the crowded eCommerce space with a store that’s not only beautiful but built to convert.
     </p>
 
          
@@ -473,9 +476,7 @@ Solvonix Technologies consists of experienced Shopify developers that are famili
         </motion.div>
 
       </div>
-    </section>
-
-            <div className='flex justify-center'>
+      <div className='flex justify-center'>
       <button
        onClick={handleScrollToContact}
         className="cursor-pointer bg-pink-500 hover:bg-pink-600 text-white px-6 py-2 lg:mt-5 rounded-md font-semibold flex items-center space-x-2"
@@ -484,9 +485,12 @@ Solvonix Technologies consists of experienced Shopify developers that are famili
         <span className="text-lg"><ArrowUp /></span>
       </button>
     </div>
+    </section>
+
+  
    
 
-         <section className="relative bg-white py-4 lg:py-16 px-4 md:px-0">
+         <section className="relative bg-white py-4 lg:pb-16 px-4 md:px-0">
       <div className="max-w-6xl mx-auto">
         <motion.h2
           initial={{ opacity: 0, y: -20 }}
@@ -572,7 +576,7 @@ Solvonix Technologies consists of experienced Shopify developers that are famili
         transition={{ duration: 0.6, delay: 0.4 }}
         className="text-gray-700 font-semibold mb-4"
       >
-        “We are a leading web development, SEO & digital marketing services provider based in Ahmedabad-Gujarat & serving a global clientele”
+        “We are a leading web development, SEO & digital marketing services provider based in Faridabad-Delhi-Ambala & serving a global clientele”
       </motion.p>
 
       <motion.p
