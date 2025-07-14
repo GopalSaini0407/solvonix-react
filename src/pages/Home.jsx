@@ -206,12 +206,12 @@ return (
          >
             <h5 className='text-[#EA3E70]'>Why Choose</h5>
             <h2 className='text-[#000022]  text-4xl lg:text-[54px] font-extralight'>Solvonix</h2>
-            <ul className="md:leading-[36px] leading-[20px] text-[#8F8F8F] text-[15px]">
-               <li className="bg-[url(/images/choose_listicon.jpg)] bg-no-repeat bg-left bg-postision top-[10px] flex lg:items-center pl-6">Targeted, Concise, Measurable and Unique Approach</li>
-               <li className="bg-[url(/images/choose_listicon.jpg)] bg-no-repeat bg-left bg-postision flex lg:items-center pl-6">Transparent, Trustworthy, Timely SEO Services</li>
-               <li className="bg-[url(/images/choose_listicon.jpg)] bg-no-repeat bg-left bg-postision flex lg:items-center pl-6">Highly Competitive, Affordable &amp; Cost-Effective Pricing</li>
-               <li className="bg-[url(/images/choose_listicon.jpg)] bg-no-repeat bg-left bg-postision flex lg:items-center pl-6">Industry benchmark SEO Service by Leader &amp; Experts</li>
-               <li className="bg-[url(/images/choose_listicon.jpg)] bg-no-repeat bg-left bg-postision flex lg:items-center pl-6">One- stop solution for All tour Internet Marketing Needs</li>
+            <ul className="md:leading-[36px] about-whychoose leading-[20px] text-[#8F8F8F] text-[15px]">
+               <li className="bg-[url(/images/choose_listicon.jpg)] bg-no-repeat pl-[39px] leading-[28px]">Targeted, Concise, Measurable and Unique Approach</li>
+               <li className="bg-[url(/images/choose_listicon.jpg)] bg-no-repeat pl-[39px] leading-[28px]">Transparent, Trustworthy, Timely SEO Services</li>
+               <li className="bg-[url(/images/choose_listicon.jpg)] bg-no-repeat pl-[39px] leading-[28px]">Highly Competitive, Affordable &amp; Cost-Effective Pricing</li>
+               <li className="bg-[url(/images/choose_listicon.jpg)] bg-no-repeat pl-[39px] leading-[28px]">Industry benchmark SEO Service by Leader &amp; Experts</li>
+               <li className="bg-[url(/images/choose_listicon.jpg)] bg-no-repeat pl-[39px] leading-[28px]">One- stop solution for All tour Internet Marketing Needs</li>
             </ul>
          </motion.div>
          <motion.div className='why-choose-right-box flex-1 flex lg:justify-end'

@@ -65,7 +65,7 @@ const SubComponent = () => {
           {
             pageData.descriptionList && pageData.descriptionList.map((list,index)=>(
               <ul key={index} className='about-whychoose text-[#A0A0A0] leading-9 text-sm lg:text-[15px]'>
-              <li className="bg-[url(/images/choose_listicon.jpg)] bg-no-repeat pl-[39px] mb-[19px] leading-[28px]">{list}</li>
+              <li className="bg-[url(/images/choose_listicon.jpg)] bg-no-repeat pl-[39px] leading-[28px]">{list}</li>
           </ul>
             ))
           }
